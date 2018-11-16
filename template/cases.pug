@@ -1,0 +1,233 @@
+
+extends layout
+
+block content
+	#skip-link
+		//- a.element-invisible.element-focusable(href='#main-content') 跳转到主要内容
+	.scrollToTop
+		i.icon-up-open-big
+	.page-wrapper
+		.scrollToTop
+			i.icon-up-open-big
+		include lib/header
+		.page-intro
+			.container
+				.col-md-12.padding-clear
+					ol.th-subnav
+						li.active
+							a(href='')  旗下基金 
+						li
+							a(href='')
+								| 海外资产配置
+						li
+							a(href='')  安康养老 
+						li
+							a(href='')  专户专项 
+						li
+							a(href='')  基金定投 
+						li
+							a(href='')  大树财富 
+						li
+							a(href='')  天弘爱理财APP 
+		.slideshow-boxed
+		// 个人业务内容
+		.slider-banner-container
+			.slider-banner-3
+				ul
+					li(data-transition='fade', data-slotamount='7', data-masterspeed='1000', data-link='http://www.thfund.com.cn/fundinfo/968006', data-target='_blank', data-title='special-account')
+						img(src='/public/images/cases/fund-index-banner.png', data-bgposition='center top', data-bgfit='cover', data-bgrepeat='no-repeat')
+
+						.tp-caption.large.sfl.tp-resizeme.font-white.start(data-x='46', data-y='76', data-speed='600', data-start='100', style='z-index: 6; white-space: nowrap; border-color: rgb(0, 0, 0); visibility: visible; transition: none; line-height: 48px; font-weight: 500; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 48px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1); transform-origin: 50% 50% 0px; right: 45px; left: 46px; top: 76px;', data-endspeed='600')
+							img(src='/public/images/cases/recon-fund.png', style='width: 222px; height: 44px;')
+
+						.tp-caption.large.sfl.tp-resizeme.font-white.start(data-x='35', data-y='130', data-speed='600', data-start='300', style='z-index: 6; white-space: nowrap; border-color: rgb(0, 0, 0); visibility: visible; transition: none; line-height: 48px; font-weight: 500; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 48px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1); transform-origin: 50% 50% 0px; right: 45px; left: 35px; top: 130px;', data-endspeed='600')
+							img(src='/public/images/cases/xingjian.png',  style='width: 429px; height: 102px;')
+
+						.tp-caption.sfb.large.tp-resizeme.font-white.start(data-x='460', data-y='198', data-speed='800', data-start='500', style='z-index: 6; white-space: nowrap; border-color: rgb(0, 0, 0); visibility: visible; transition: none; line-height: 18px; font-weight: 500; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 18px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1); transform-origin: 50% 50% 0px; right: 45px; left: 460px; top: 198px;', data-endspeed='600')
+							img(src='/public/images/cases/jiadao.png', tppabs='http://www.thfund.com.cn//public/images/cases/jiadao.png', style='width: 79px; height: 35px;')
+						
+						.tp-caption.sfr.tp-resizeme.font-white.start(data-x='35', data-y='252', data-speed='600', data-start='700', style='z-index: 6; white-space: nowrap; border-color: rgb(0, 0, 0); visibility: visible; line-height: 18px; font-weight: 500; border-width: 0px; margin: 0px 0px 0px 20px; padding: 0px; letter-spacing: 0px; font-size: 18px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1); transform-origin: 50% 50% 0px; right: 45px; left: 35px; top: 252px; transition: none 0s ease 0s;', data-endspeed='600') 本基金为香港互认基金，投资前请参阅基金法律文件
+						
+						.tp-caption.sfl.tp-resizeme.start(data-x='35', data-y='322', data-speed='600', data-start='900', style='right: 45px; min-height: 40px; color: rgb(57, 63, 72); min-width: 145px; font-weight: bold; line-height: 18px; border-width: 0px; margin: 0px 0px 0px 20px; padding: 0px; letter-spacing: 0px; font-size: 10px; left: 35px; top: 322px; visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1); transition: all 0s ease 0s;', data-endspeed='600')
+							a.btn.btn-lg.btn-bg-color-yellow.margin-clear(style='font-size: 14px; line-height: 18px; min-height: 30px; min-width: 145px; font-weight: 500; border-width: 1px; margin: 0px; padding: 12px; letter-spacing: 0px; transition: all 0.2s ease-out 0s;', href='fundinfo/968006.htm') 了解基金详情
+	
+			section.section.clearfix.object-non-visible.padding-clear.padding-top-60(data-animation-effect='fadeInUpSmall', data-effect-delay='700')
+				.container
+					.row.grid-space-20
+						h3.text-center.padding-bottom-15 新手入门
+						p.text-center.font12.margin-clear
+							| 关于基金还有任何疑问？请联系我们
+						.col-md-3
+							.box-style-1.white-bg.object-non-visible.animated.object-visible.fadeInLeft.-visible.fadeInLeft.box-shadow-clear(data-animation-effect='fadeInLeft', data-effect-delay='300')
+								.overlay-container
+									img(src='/public/images/cases/2icon1.png', tppabs='http://www.thfund.com.cn//public/images/cases/2icon1.png', alt='')
+								h5.margin-top-20.margin-bottom-10
+									a.font-red(href='qa_list-pc=49&sc=50.htm', tppabs='http://www.thfund.com.cn/qa_list?pc=49&sc=50') 基金科普
+								p.margin-clear.font12.font-color-a4aeb9.padding-bottom-10 基金入门 | 基金类型 | 申购赎回 
+						.col-md-3
+							.box-style-1.white-bg.object-non-visible.animated.object-visible.fadeInLeft.-visible.fadeInLeft.box-shadow-clear(data-animation-effect='fadeInLeft', data-effect-delay='200')
+								.overlay-container
+									img(src='/public/images/cases/2icon2.png', tppabs='http://www.thfund.com.cn//public/images/cases/2icon2.png', alt='')
+								h5.margin-top-20.margin-bottom-10
+									a.font-red(href='qa_list-pc=53&sc=55.htm', tppabs='http://www.thfund.com.cn/qa_list?pc=53&sc=55') 网上交易
+								p.margin-clear.font12.font-color-a4aeb9.padding-bottom-10 如何开户 | 交易指南 | 交易规则 
+						.col-md-3
+							.box-style-1.white-bg.object-non-visible.animated.object-visible.fadeInLeft.-visible.fadeInLeft.box-shadow-clear(data-animation-effect='fadeInLeft', data-effect-delay='100')
+								.overlay-container
+									img(src='/public/images/cases/2icon3.png', tppabs='http://www.thfund.com.cn//public/images/cases/2icon3.png', alt='')
+								h5.margin-top-20.margin-bottom-10
+									a.font-red(href='qa_list-pc=49&sc=66.htm', tppabs='http://www.thfund.com.cn/qa_list?pc=49&sc=66')  安全保障
+								p.margin-clear.font12.font-color-a4aeb9.padding-bottom-10 托管行机制 | 同卡进出基金 | 证监会监管
+						.col-md-3
+							.box-style-1.white-bg.object-non-visible.animated.object-visible.fadeInLeft.box-shadow-clear(data-animation-effect='fadeInLeft', data-effect-delay='100')
+								.overlay-container
+									img(src='/public/images/cases/2icon4.png', tppabs='http://www.thfund.com.cn//public/images/cases/2icon4.png', alt='')
+								h5.margin-top-20.margin-bottom-10
+									a.font-red(href="javascript:if(confirm('http://app.thfund.com.cn/  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�  \n\n����Ҫ�ӷ�����������?'))window.location='http://app.thfund.com.cn/'", tppabs='http://app.thfund.com.cn/')  移动APP理财
+								p.margin-clear.font12.font-color-a4aeb9.padding-bottom-10 随时买入 | 便捷查询 | APP下载 
+			
+			section.section.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='100')
+				.main
+					.container.padding-clear
+						.row.margin-clear
+							.col-md-12.padding-clear
+								.row.margin-clear
+									.line-1px-dark
+									h3.text-center.padding-bottom-15.margin-top-60.margin-bottom-50 推荐基金
+									.col-sm-4.padding-clear.startor-bg-img1
+										p.font18(style='font-weight:500;line-height:18px;') 弘观推荐
+										p.font14 教你跑赢国内投资市场的正确姿势
+										p.font40.line-height-40.margin-top-35(style='z-index: 6; white-space: nowrap; border-color: rgb(0, 0, 0); visibility: inherit; transition: none; font-weight:500;border-width: 0px; letter-spacing: 0px; font-size: 40px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;') 去海外投资？
+										p.font30 让海外资产配置不再是富人特权
+									.col-sm-4.padding-clear.startor-bg-img2
+										p.font18 天弘安康养老混合
+										p.font65.font-red.line-height-90(style='white-space: nowrap; border-color: rgb(0, 0, 0); visibility: inherit; transition: none; font-weight:700;border-width: 0px; letter-spacing: 0px; font-size: 55px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;') 21.5919%
+										p.pull-left(style='width:130px;')
+											span 近两年
+											br
+											span 定位养老理财，债股可“7:3”配比
+										a.btn.font16.pull-right.btn-th-buy(href="javascript:if(confirm('https://etrade.thfund.com.cn/webtrade/page/fund/fundList.html?fundcode=420009  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��һ��ʹ��δ֧��Э��ĵ�ַ(����: gopher)��  \n\n����Ҫ�ӷ�����������?'))window.location='https://etrade.thfund.com.cn/webtrade/page/fund/fundList.html?fundcode=420009'", tppabs='https://etrade.thfund.com.cn/webtrade/page/fund/fundList.html?fundcode=420009') 购买
+									.col-sm-4.padding-clear.startor-bg-img3
+										p.font18 天弘永利A
+										p.font40.font-red.line-height-50(style='font-weight:700;') 18.7106%
+										p.pull-left(style='width:200px;')
+											span 近两年
+											br
+											span 过往业绩不代表未来收益，市场有风险，投资需谨慎”
+										a.btn.font16.pull-right.btn-th-buy(href="javascript:if(confirm('https://etrade.thfund.com.cn/webtrade/page/fund/fundList.html?fundcode=420002  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��һ��ʹ��δ֧��Э��ĵ�ַ(����: gopher)��  \n\n����Ҫ�ӷ�����������?'))window.location='https://etrade.thfund.com.cn/webtrade/page/fund/fundList.html?fundcode=420002'", tppabs='https://etrade.thfund.com.cn/webtrade/page/fund/fundList.html?fundcode=420002') 购买
+										.divider-white.margin-top-20
+										p.font18.line-height-18 天弘永定价值成长混合
+										p.font40.font-red(style='font-weight:700;line-height:60px;') 42.8892%
+										p.pull-left(style='width:200px;')
+											span 近两年
+											br
+											span 注重精选成长性股票的价值基金
+										a.btn.font16.pull-right.btn-th-buy(href="javascript:if(confirm('https://etrade.thfund.com.cn/webtrade/page/fund/fundList.html?fundcode=420003  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��һ��ʹ��δ֧��Э��ĵ�ַ(����: gopher)��  \n\n����Ҫ�ӷ�����������?'))window.location='https://etrade.thfund.com.cn/webtrade/page/fund/fundList.html?fundcode=420003'", tppabs='https://etrade.thfund.com.cn/webtrade/page/fund/fundList.html?fundcode=420003') 购买
+										.divider-white.margin-bottom-5
+										p.pull-right(style='padding-top:24px')
+											a.font14(href='#fundlist') 查看全部基金
+
+			section.section.clearfix.object-non-visible.padding-clear.padding-top-30(data-animation-effect='fadeInUpSmall', data-effect-delay='100')
+				.container.padding-clear
+					.row.margin-bottom-20
+						h3.text-center 选择我们
+						.col-md-3
+							.box-style-1.margin-clear.object-non-visible.animated.object-visible.fadeInLeft(data-animation-effect='fadeInLeft', data-effect-delay='300')
+								.overlay-container
+									img(src='/public/images/cases/4iocn1.png', tppabs='http://www.thfund.com.cn//public/images/cases/4iocn1.png', alt='')
+								p.margin-top-10.font18.font-gray 2015管理资产总规模行业NO.1
+						.col-md-3
+							.box-style-1.margin-clear.object-non-visible.animated.object-visible.fadeInLeft(data-animation-effect='fadeInLeft', data-effect-delay='200')
+								.overlay-container
+									img(src='/public/images/cases/4iocn2.png', tppabs='http://www.thfund.com.cn//public/images/cases/4iocn2.png', alt='')
+								p.margin-top-10.font18.font-gray 线上开户 轻松交易
+						.col-md-3
+							.box-style-1.margin-clear.object-non-visible.animated.object-visible.fadeInLeft(data-animation-effect='fadeInLeft', data-effect-delay='100')
+								.overlay-container
+									img(src='/public/images/cases/4iocn3.png', tppabs='http://www.thfund.com.cn//public/images/cases/4iocn3.png', alt='')
+								p.margin-top-10.font18.font-gray 5×12 专业客服支持
+						.col-md-3
+							.box-style-1.margin-clear.object-non-visible.animated.object-visible.fadeInLeft.box-shadow-clear(data-animation-effect='fadeInLeft', data-effect-delay='100')
+								.overlay-container
+									img(src='/public/images/cases/4iocn4.png', tppabs='http://www.thfund.com.cn//public/images/cases/4iocn4.png', alt='')
+								p.margin-top-10.font18.font-gray 基金申购费率享折扣
+					.line-1px-dark
+			section#fundlist.section.clearfix.object-non-visible.padding-clear.padding-top-45(data-animation-effect='fadeInUpSmall', data-effect-delay='100')
+				.container.white-bg.padding-clear
+					.row.margin-clear
+						.col-md-4.padding-left-0
+							form(role='search')
+								.form-group.has-feedback
+									span
+										strong 全部产品
+									input#fund_search_text.form-control(placeholder='全部基金代码／名称', type='text')
+									i#search_start.form-control-feedback
+										img(src='/public/images/cases/5icon1.png')
+					.row.margin-clear.padding-top-10.padding-bottom-10
+						.col-md-12.padding-clear
+							.col-md-1.padding-clear.text-left
+								p.filer-cat 风险等级
+								p.filer-cat 基金类型
+							.col-md-11
+								.row.margin-left-D40
+									p.filer-type.filter-type-risk
+										span
+											a#risk-any.risk_category_filter.btn.bg-color-red.filer-type-all.font-color-383f49.filer-type-name 不限
+										span
+											a#risk-low.risk_category_filter.font-color-383f49.filer-type-name 低
+										span
+											a#risk-middle.risk_category_filter.font-color-383f49.filer-type-name 中
+										span
+											a#risk-high.risk_category_filter.font-color-383f49.filer-type-name 高
+								.row.margin-left-D40
+									p.filer-type.filter-type-category
+										span
+											a#type_any.type_category_filter.btn.bg-color-red.filer-type-all.fund-type-any.font-color-383f49.filer-type-name 不限
+										span
+											a#type_huren.type_category_filter.font-color-383f49.fund-type-huren.filer-type-name 中港互认基金
+										span
+											a#type_pianguxing.type_category_filter.font-color-383f49.fund-type-pianguxing.filer-type-name 偏股型混合基金
+										span
+											a#type_zhishu.type_category_filter.font-color-383f49.fund-type-zhishu.filer-type-name 指数型基金
+										span
+											a#type_zhaiquan.type_category_filter.font-color-383f49.fund-type-zhaiquan.filer-type-name 债券型基金
+										span
+											a#type_zhaiquanmix.type_category_filter.font-color-383f49.fund-type-zhaiquan-mixed.filer-type-name 偏债券型混合型基金
+										span
+											a#type_money.type_category_filter.font-color-383f49.fund-type-money.filer-type-name 货币型基金
+			section.section.clearfix.object-non-visible.padding-clear.margin-bottom-60(data-animation-effect='fadeInUpSmall', data-effect-delay='100')
+				.container.padding-clear
+					.row.margin-clear
+						#htab2.tab-pane.fade.active.in
+							.row.margin-clear
+								.col-md-12.padding-clear
+									table#table2.table.table-same.table-striped.sort-table-box(data-toggle='table2', data-toolbar='#toolbar', data-search='true', data-show-refresh='true', data-show-toggle='true', data-show-columns='true', data-show-export='true', data-detail-view='true', data-detail-formatter='detailFormatter', data-minimum-count-columns='2', data-show-pagination-switch='true', data-pagination='true', data-id-field='id', data-page-list='[10, 25, 50, 100, ALL]', data-show-footer='false', data-side-pagination='server', data-response-handler='responseHandler')
+										thead
+											tr
+												th
+													span.sortable 基金代码
+												th
+													span.sortable 基金名称
+												th#latest_netvalue.sortable_col
+													span.sortable.both 最新净值
+												th#total_netvalue.sortable_col
+													span.sortable.both 累计净值
+												th#trend_in_three_month.sortable_col
+													span.sortable.both 近3月涨幅
+												th#trend_in_six_month.sortable_col
+													span.sortable.both 近6月涨幅
+												th#trend_in_one_year.sortable_col
+													span.sortable.both 近1年涨幅
+												th#trend_in_this_year.sortable_col
+													span.sortable.both 今年以来涨幅
+												th#trend_from_setup.sortable_col
+													span.sortable.both 成立以来
+												th#ratio.sortable_col
+													span.sortable.both 七日年化收益率
+												th#profit.sortable_col
+													span.sortable.both 万份收益
+												th
+													span 操作
+										tbody
+									nav.pull-right
+										ul.pagination

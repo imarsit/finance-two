@@ -1,0 +1,143 @@
+.header-top
+	.container.padding-clear
+		.row
+			.col-xs-2.col-md-6
+				.main-navigation.animated
+					nav.navbar.sub-navbar(role='navigation')
+						ul.nav.navbar-nav.sub-nav
+							li.dropdown.animated
+								a.dropdown-toggle.first-navlist(href="javascript:;", data-toggle='dropdown') 移动理财
+								ul.dropdown-menu.follow-thfund.app-top
+									li.app-fl
+										img(src='/public/images/header/mars-logo.jpg')
+									li.app-fr
+										a.apple-app(href="javascript:;") IOS 下载
+										a.android-app(href="") Android
+							li.dropdown.animated
+								a.dropdown-toggle(href='#', data-toggle='dropdown') 关注火星人
+								ul.dropdown-menu.follow-thfund
+									li.follow-list.header-top
+										img(src='/public/images/header/mars-wechat.png')
+										| 微信公众号
+									li.follow-list
+										a(href="")
+											img(src='/public/images/header/thfund-weibo.png')
+											| 火星人基金
+							li.dropdown.animated
+								a.dropdown-toggle(href='help.htm', data-toggle='dropdown') 客服中心
+								ul.dropdown-menu.follow-thfund
+									li.header-top
+										| 客服热线
+										br
+										| 400-710-9999
+									li
+										a(href="") 在线咨询
+									li
+										a(target='', href='qa_list.htm') 常见问题
+									li.left-icon
+										a(href="")
+											img(src='/public/images/header/top-wangwang.png')
+											| 淘宝店咨询
+							li.dropdown.animated
+								a.dropdown-toggle(href='#', data-toggle='dropdown') 客服电话：400-710-9999
+							li.dropdown.animated
+								a.dropdown-toggle(href="", data-toggle='dropdown') 在线咨询
+			.col-xs-10.col-md-6
+				#header-top-second.clearfix
+					.header-top-dropdown
+						.btn-group.dropdown
+							button.btn(onclick="window.open('', '_blank')")
+								| 个人登录
+								b.vline  |
+							button.btn.top-kaihu(onclick="window.open('', '_blank')")
+								| 个人开户
+								b.vline  |
+							button.btn(onclick="window.open('', '_blank')")
+								| English
+
+
+header.header.fixed.header-small.clearfix(role='banner')
+	.container.padding-clear
+		.row
+			.col-md-3.padding-clear
+				// header-left start
+				.header-left.clearfix
+					// logo
+					.logo
+						a(href='/')
+							img#logo(src='/public/images/header/mars-logo.jpg', alt='iDea')
+					.site-slogan
+						| 稳健理财 值得信赖
+			.col-md-9.padding-clear
+				.header-right.clearfix
+					.main-navigation.animated
+						nav.navbar.navbar-default(role='navigation')
+							.container-fluid.padding-cle
+								#navbar-collapse-1.collapse.navbar-collapse
+									ul.menu.nav.navbar-nav.navbar-left
+										li.first.leaf.active
+											h5
+												a.active(href='/') 首页
+										li.expanded.dropdown
+											h5
+												a.dropdown-toggle(href='cases', data-target='#', data-toggle='dropdown') 个人业务
+											ul.dropdown-menu
+												li.first.leaf
+													a(href='fundlist.htm') 旗下基金
+												li.leaf
+													a(href='overseas_asset.htm', title='essence') 海外资产配置
+												li.leaf
+													a(href='aip.htm', title='essence') 基金定投
+												li.leaf
+													a(href='tree_wealth.htm') 大树财富
+												li.leaf
+													a(href='sma.htm') 个人专户
+												li.last.leaf
+													a(href="") 火星人爱理财APP
+										li.expanded.dropdown
+											h5
+												a.dropdown-toggle(href='inst_sell', data-target='#', data-toggle='dropdown') 机构业务
+											ul.dropdown-menu
+												li.first.leaf
+													a(href='inst_sell.htm') 机构直销
+												li.last.leaf
+													a(href='inst_sma.htm') 机构专户专项
+										li.expanded.dropdown
+											h5
+												a.dropdown-toggle(href='yuebao', data-target='#', data-toggle='dropdown') 余额宝
+											ul.dropdown-menu
+												li.first.leaf
+													a(href='') 余额宝首页
+												li.leaf
+													a(href='yuebao/emotions.htm') 余额宝情绪指数
+												li.last.leaf
+													a(href="") 宝粉网
+										li.leaf
+											h5
+												a(href='old') 养老金
+										li.leaf
+											h5
+												a(href='bank') 银行业务
+										li.last.expanded.dropdown
+											h5
+												a.dropdown-toggle(href='about', data-target='#', data-toggle='dropdown') 关于我们
+											ul.dropdown-menu
+												li.first.leaf
+													a(href='about/company.htm') 公司介绍
+												li.leaf
+													a(href='cnotice_list.htm') 公司公告
+												li.leaf
+													a(href='about/news_list.htm') 媒体关注
+												li.leaf
+													a(href='notice_list.htm') 基金公告
+												li.leaf
+													a(href='about/team.htm') 团队风采
+												li.leaf
+													a(href='about/contact.htm') 联系我们
+												li.leaf
+													a(href="") 人才招聘
+												li.last.leaf
+													a(href='tfzc/zhcp.html',title='') 火星人创新
+
+
+

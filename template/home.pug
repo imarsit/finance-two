@@ -1,0 +1,534 @@
+extend layout
+
+block content
+	#skip-link
+		//- a.element-invisible.element-focusable(href='#main-content') 跳转到主要内容
+	.scrollToTop
+		i.icon-up-open-big
+	.page-wrapper
+		.scrollToTop
+			i.icon-up-open-big
+		include lib/header
+
+		.page-wrapper
+			section.banner
+				.slideshow.white-bg
+					.slider-banner-container
+						.slider-banner-3
+							ul
+								li(data-transition='fade', data-slotamount='7', data-masterspeed='1000', data-saveperformance='on', data-title='Slide 1')
+									img(src='/public/images/home/banner/yebdecz2.jpg', tppabs='http://cdn-thweb.tianhongjijin.com.cn/banner/yebdecz2.jpg', alt='slidebg', data-bgposition='center top', data-bgfit='cover', data-bgrepeat='no-repeat')
+									.tp-caption.dark-translucent-bg(data-x='center', data-y='bottom', data-speed='800', data-start='0', style='background-color:rgba(0,0,0,0.5);')
+								li(data-transition='fade', data-slotamount='7', data-masterspeed='1000', data-saveperformance='on', data-link='http://app.thfund.com.cn', data-target='_blank', data-title='Slide 1')
+									img(src='/public/images/home/banner/index-banner2.jpg', tppabs='http://cdn-thweb.tianhongjijin.com.cn/banner/index-banner2.jpg', alt='slidebg', data-bgposition='center top', data-bgfit='cover', data-bgrepeat='no-repeat')
+									.tp-caption.dark-translucent-bg(data-x='center', data-y='bottom', data-speed='800', data-start='0', style='background-color:rgba(0,0,0,0.5);')
+									.tp-caption.dark-translucent-bg(data-x='center', data-y='bottom', data-speed='800', data-start='0', style='background-color:rgba(0,0,0,0.5);')
+									.tp-caption.sft.tp-resizeme.font-white(data-x='70', data-y='122', data-speed='700', data-start='200', data-end='10000', style='z-index: 6; white-space: nowrap;line-height: 36px; font-weight:500;letter-spacing: 0px; font-size: 36px;', data-endspeed='600') 火星人基金官方APP新版发布啦！
+									.tp-caption.sfb.text-center.tp-resizeme.font-white(data-x='70', data-y='200', data-speed='700', data-start='400', data-end='10000', style='z-index: 6; white-space: nowrap;line-height: 12px; font-weight:500;letter-spacing: 0px; font-size: 12px;', data-endspeed='600')
+										| 精选基金和资讯  火眼金晶 慧眼识英
+										br
+										br
+										| 余额宝申购基金 一键轻松交易查询
+										br
+										br
+										| 体验情侣亲密理财
+										|                                         两人存钱更好玩
+										br
+										br
+										| 每月为父母存一笔 时常说说我爱你
+										br
+									div(data-x='70', data-y='236', data-speed='700', data-start='400', data-end='10000', data-endspeed='600')
+										img(src='/public/images/home/banner/1462329131978138.png', tppabs='http://www.thfund.com.cn//public/images/home/banner/1462329131978138.png', title='1462329131978138.png', alt='btn-download.png', height='', border='0', vspace='0', width='')
+									.tp-caption.lfb.tp-resizeme.font-white(data-x='236', data-y='35', data-speed='700', data-start='400', data-end='10000', data-endspeed='600')
+										img(src='/public/images/home/banner/1462329150226129.png', tppabs='http://www.thfund.com.cn//public/images/home/banner/1462329150226129.png', title='1462329150226129.png', alt='index-mobile.png')
+								li(data-transition='fade', data-slotamount='7', data-masterspeed='1000', data-saveperformance='on', data-title='Slide 1')
+									img(src='/public/images/home/banner/cow_hd.jpg', tppabs='http://cdn-thweb.tianhongjijin.com.cn/banner/cow_hd.jpg', alt='slidebg', data-bgposition='center top', data-bgfit='cover', data-bgrepeat='no-repeat')
+									.tp-caption.dark-translucent-bg(data-x='center', data-y='bottom', data-speed='800', data-start='0', style='background-color:rgba(0,0,0,0.5);')
+
+				.container.txtScroll-container
+					.row
+						.col-md-12
+							.txtScroll-left.object-non-visible(data-animation-effect='fadeInRightSmall', data-effect-delay='1000')
+								h4
+									i
+										img(src='/public/images/home/banner/mythum.png')
+									| 网上交易
+									a.btn.btn-login(href="javascript:;") 登录
+								.hd
+									a.line-height-40.next
+									a.line-height-40.prev
+									p.font14.line-height-40
+										| 最新公告 
+										i.font12.font-red NEWS
+								.bd
+									.tempWrap(style='overflow:hidden; position:relative; width:1175px')
+										ul.infoList
+											li
+												div
+													p
+														a(href="") 【重要】火星人聚利灵活配置混合型证券投资基金基金合同
+														span 2016.12.03
+													p
+														a(href="") 【重要】火星人聚利灵活配置混合型证券投资基金基金合同摘要
+														span 2016.12.03
+											li
+												div
+													p
+														a(href="") 【重要】火星人聚利灵活配置混合型证券投资基金托管协议
+														span 2016.12.03
+													p
+														a(href="") 【重要】火星人聚利灵活配置混合型证券投资基金招募说明书
+														span 2016.12.03
+											li
+												div
+													p
+														a(href="") 【重要】火星人聚利灵活配置混合型证券投资基金发售公告
+														span 2016.12.03
+													p
+														a(href="") 【重要】火星人金利灵活配置混合型证券投资基金基金份额发售公告
+														span 2016.11.30
+											li
+												div
+													p
+														a(href='NOTICE/18416.htm') 【重要】火星人基金管理有限公司关于火星人普惠养老保本混合型证券投...
+														span 2016.11.24
+													p
+														a(href="javascript:;") 行健宏扬中国基金每月基金报告（2016年11月）
+														span 2016.12.16
+											li
+												div
+													p
+														a(href='notice/18454.htm') 火星人基金管理有限公司关于增加上海凯石财富基金销售有限...
+														span 2016.12.14
+													p
+														a(href='notice/18452.htm') 火星人基金管理有限公司关于火星人安盈灵活配置混合型证券投...
+														span 2016.12.13
+									p.font12.pull-right.scroll-more.margin-top-20
+										a(href='notice_list.htm')
+											| 了解更多
+											i
+												img(src='/public/images/home/banner/arrow-red.png')
+			section.section.clearfix.padding-clear.padding-top-30
+				.container
+					.row.grid-space-20
+						p.text-center.font22 火星人基金，满足你的理财需求
+						p.text-center.font14.font-color-a0a0a0.padding-top-15 寻找专属理财场景，推荐个性化理财产品
+			section.section.padding-bottom-0
+				.container.padding-clear
+					.row.margin-clear
+						// main start
+						.main.col-md-12.padding-clear
+							.tabScroll-left
+		
+								.bd
+									
+									.tempWrap(style='overflow:hidden; position:relative; width:1175px')
+										ul#tab-owl-carousel.nav.nav-tabs.index_tab(role='tablist', style='width: 1880px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: 0px;border:0;')
+											li.overlay-container.active(style='float: left; width: 230px;')
+												h4
+													a.tab-title-1.hvr-bubble-top(style='background-image: url(http://cdn-thweb.tianhongjijin.com.cn/product-icon1_1.png)', href='#lvyoudujia', role='tab', data-toggle='tab', data-nothover='http://cdn-thweb.tianhongjijin.com.cn/product-icon1_1.png', data-hover='http://cdn-thweb.tianhongjijin.com.cn/product-w-icon1.png') 安康养老
+											li.overlay-container(style='float: left; width: 230px;')
+												h4
+													a.tab-title-2.hvr-bubble-top(style='background-image: url(http://cdn-thweb.tianhongjijin.com.cn/product-icon2.png)', href='#haiwaizichan', role='tab', data-toggle='tab', data-nothover='http://cdn-thweb.tianhongjijin.com.cn/product-icon2.png', data-hover='http://cdn-thweb.tianhongjijin.com.cn/product-w-icon2.png') 基金定投
+											li.overlay-container(style='float: left; width: 230px;')
+												h4
+													a.tab-title-3.hvr-bubble-top(style='background-image: url(http://cdn-thweb.tianhongjijin.com.cn/product-icon3.png)', href='#ankangyanglao', role='tab', data-toggle='tab', data-nothover='http://cdn-thweb.tianhongjijin.com.cn/product-icon3.png', data-hover='http://cdn-thweb.tianhongjijin.com.cn/product-w-icon3.png') 海外资产配置
+											li.overlay-container(style='float: left; width: 230px;')
+												h4
+													a.tab-title-4.hvr-bubble-top(style='background-image: url(http://cdn-thweb.tianhongjijin.com.cn/product-icon4.png)', href='#goufangzhiye', role='tab', data-toggle='tab', data-nothover='http://cdn-thweb.tianhongjijin.com.cn/product-icon4.png', data-hover='http://cdn-thweb.tianhongjijin.com.cn/product-w-icon4.png') 教育投资
+											li.overlay-container(style='float: left; width: 230px;')
+												h4
+													a.tab-title-5.hvr-bubble-top(style='background-image: url(http://cdn-thweb.tianhongjijin.com.cn/product-icon5.png)', href='#zinvjiaoyu', role='tab', data-toggle='tab', data-nothover='http://cdn-thweb.tianhongjijin.com.cn/product-icon5.png', data-hover='http://cdn-thweb.tianhongjijin.com.cn/product-w-icon5.png') 出国留学
+									// Ntabs end
+					.row.margin-clear
+						.tab-content#home-tab.margin-bottom-0.margin-top-5.shadow-clear
+							// 旅游度假Tab
+							#lvyoudujia.tab-pane.fade.in.active
+								.row.margin-clear
+									.col-md-12.padding-clear.bg-color-edeeed.home-bg
+										.col-md-7.padding-clear.tab-color-img-box
+											.padding-clear.box-shadow-clear
+												.tab-img-container
+													img(style='max-width: none', src='/public/images/home/picture1yanglao_0.jpg', tppabs='http://cdn-thweb.tianhongjijin.com.cn/picture1yanglao_0.jpg', alt='')
+										.col-md-5.padding-clear.margin-top-15
+											.box-intro.box-style-1.box-text-center.padding-clear.box-shadow-clear.padding-left-15.object-non-visible.animated.object-visible.fadeInRight(data-animation-effect='fadeInRight', data-effect-delay='200')
+												div
+													h5.font30.text-left
+														span(style="font-family: 'Helvetica Neue'; font-size: 15px; line-height: 24px; widows: auto; background-color: rgb(255, 255, 255);")
+													h5.font30.text-left(style='white-space: nowrap;') 就算退休,也有工作时的生活标准
+													.font14.font-color-a0a0a0.margin-todiv-5.margin-bottom-15.text-left 悠闲生活，因为理财，倍感轻松和愉悦。
+													.font14.text-left.font-color-dark
+														p.info(style="font-family: 'Helvetica Neue'; font-size: 15px; margin-top: 0.667rem; margin-bottom: 0.667rem; line-height: 24px; white-space: nowrap; widows: auto;")
+															| 路遥知马力，日久见“良基”
+															br
+															span(style='widows: auto;')
+																| 基金中的长跑健将
+																br
+															span(style='widows: auto;') 优质价值基金，理性投资之选
+												.text-left.padding-top-15
+													span.btn-pro-box
+														a.btn.bg-color-8abc5d.margin-right-15.margin-top-0.line-height-28(href='pension.htm', tppabs='http://www.thfund.com.cn/pension') 了解安康养老
+										.tab-color-panel-1.object-non-visible.animated.object-visible.fadeIn(data-animation-effect='fadeIn', data-effect-delay='300')
+										.tab-color-panel-text.object-non-visible.animated.object-visible.fadeInLeft(data-animation-effect='fadeInLeft', data-effect-delay='300')
+											.tab-more
+												a(href='pension.htm', tppabs='http://www.thfund.com.cn/pension') 了解更多
+											.tab-more-icon
+												img(src='/public/images/home/arrow-white.png', tppabs='http://www.thfund.com.cn//public/images/home/arrow-white.png')
+							// 海外投资Tab
+							#haiwaizichan.tab-pane.fade.in
+								.row.margin-clear
+									.col-md-12.padding-clear
+										.col-md-7.padding-clear.tab-color-img-box
+											.padding-clear.box-shadow-clear.tab-img-container
+												img(style='max-width: none', src='/public/images/home/picture2dingtou.jpg', tppabs='http://cdn-thweb.tianhongjijin.com.cn/picture2dingtou.jpg', alt='')
+										.col-md-5.padding-clear.margin-top-15
+											.box-intro.box-style-1.box-text-center.padding-clear.box-shadow-clear.padding-left-15.object-non-visible.animated.object-visible.fadeInRight(data-animation-effect='fadeInRight', data-effect-delay='200')
+												div
+													h5.font30.text-left 定投现在，就是投资未来
+													.font14.font-color-a0a0a0.margin-todiv-5.margin-bottom-15.text-left 提前计划，用心生活，为爱定投。
+													.font14.text-left.font-color-dark
+														p.info(style="font-family: 'Helvetica Neue'; font-size: 15px; margin-top: 0.667rem; margin-bottom: 0.667rem; line-height: 24px; white-space: nowrap; widows: auto;")
+															| 基金定投，小积累汇聚大财富
+															br
+															span(style='widows: auto;')
+																| 资金灵活，享受投资理财复利
+																br
+															| 预防风险，避免钱到用时方恨少
+												.text-left.padding-top-15
+													span.btn-pro-box
+														a.btn.bg-color-8abc5d.margin-right-15.margin-top-0.line-height-28(href='aip.htm', tppabs='http://www.thfund.com.cn/aip') 了解基金定投
+										.tab-color-panel-2.object-non-visible.animated.object-visible.fadeIn(data-animation-effect='fadeIn', data-effect-delay='300')
+										.tab-color-panel-text.object-non-visible.animated.object-visible.fadeInLeft(data-animation-effect='fadeInLeft', data-effect-delay='300')
+											.tab-more
+												a(href='aip.htm', tppabs='http://www.thfund.com.cn/aip') 了解更多
+											.tab-more-icon
+												img(src='/public/images/home/arrow-white.png', tppabs='http://www.thfund.com.cn//public/images/home/arrow-white.png')
+							// 安康养老Tab
+							#ankangyanglao.tab-pane.fade.in
+								.row.margin-clear
+									.col-md-12.padding-clear.bg-color-edeeed.home-bg
+										.col-md-7.padding-clear.tab-color-img-box
+											.padding-clear.box-shadow-clear
+												.tab-img-container
+													img(style='max-width: none', src='/public/images/home/picture3haiwai.jpg', tppabs='http://cdn-thweb.tianhongjijin.com.cn/picture3haiwai.jpg', alt='')
+										.col-md-5.padding-clear.margin-top-15
+											.box-intro.box-style-1.box-text-center.padding-clear.box-shadow-clear.padding-left-15.object-non-visible.animated.object-visible.fadeInRight(data-animation-effect='fadeInRight', data-effect-delay='200')
+												div(style='white-space: nowrap;')
+													h5.font30.text-left 出海,让海外投资不止是富人特权
+													.font14.font-color-a0a0a0.margin-todiv-5.margin-bottom-15.text-left
+														| 瞄准海外资产配置
+														| 无需百万本金
+													.font14.text-left.font-color-dark
+														p.info(style="font-family: 'Helvetica Neue'; font-size: 15px; margin-top: 0.667rem; margin-bottom: 0.667rem; line-height: 24px; white-space: nowrap; widows: auto;")
+															| 专业团队导航
+															| 抢占投资先机
+															br
+															span(style='widows: auto;')
+																| 摆脱单一投资
+																| 寻全球价值洼地 
+																br
+															span(style='widows: auto;')
+																| 重视投资回报
+																| 合理资产配置
+												.text-left.padding-top-15
+													span.btn-pro-box
+														a.btn.bg-color-8abc5d.margin-right-15.margin-top-0.line-height-28(href='overseas_asset.htm', tppabs='http://www.thfund.com.cn/overseas_asset') 了解海外资产配置
+										.tab-color-panel-3.object-non-visible.animated.object-visible.fadeIn(data-animation-effect='fadeIn', data-effect-delay='300')
+										.tab-color-panel-text.object-non-visible.animated.object-visible.fadeInLeft(data-animation-effect='fadeInLeft', data-effect-delay='300')
+											.tab-more
+												a(href='overseas_asset.htm', tppabs='http://www.thfund.com.cn/overseas_asset') 了解更多
+											.tab-more-icon
+												img(src='/public/images/home/arrow-white.png', tppabs='http://www.thfund.com.cn//public/images/home/arrow-white.png')
+							// 购房置业Tab
+							#goufangzhiye.tab-pane.fade.in
+								.row.margin-clear
+									.col-md-12.padding-clear.bg-color-edeeed.home-bg
+										.col-md-7.padding-clear.tab-color-img-box
+											.padding-clear.box-shadow-clear
+												.tab-img-container
+													img(style='max-width: none', src='/public/images/home/picture4jiaoyutouzi_0.jpg', tppabs='http://cdn-thweb.tianhongjijin.com.cn/picture4jiaoyutouzi_0.jpg', alt='')
+										.col-md-5.padding-clear.margin-top-15
+											.box-intro.box-style-1.box-text-center.padding-clear.box-shadow-clear.padding-left-15.object-non-visible.animated.object-visible.fadeInRight(data-animation-effect='fadeInRight', data-effect-delay='200')
+												div(style='white-space: nowrap;')
+													h5.font30.text-left 孩子小,你才有更多机会对Ta好
+													.font14.font-color-a0a0a0.margin-todiv-5.margin-bottom-15.text-left 教育准备金，积少成多，聚沙成塔
+													.font14.text-left.font-color-dark
+														p.info(style="margin-top: 0.667rem; margin-bottom: 0.667rem; font-family: 'Helvetica Neue'; font-size: 15px; line-height: 24px; widows: auto;")
+															| 教育理财，孩子成长路上的优选
+															br
+															span(style='widows: auto;')
+																| 提前规划，投资方案个性化定制
+																br
+															span(style='widows: auto;') 专业投资，严控风险、合理配置
+												.text-left.padding-top-15
+													span.btn-pro-box
+														a.btn.bg-color-8abc5d.margin-right-15.margin-top-0.line-height-28(href='aip.htm', tppabs='http://www.thfund.com.cn/aip') 了解基金定投
+										.tab-color-panel-4.object-non-visible.animated.object-visible.fadeIn(data-animation-effect='fadeIn', data-effect-delay='300')
+										.tab-color-panel-text.object-non-visible.animated.object-visible.fadeInLeft(data-animation-effect='fadeInLeft', data-effect-delay='300')
+											.tab-more
+												a(href='aip.htm', tppabs='http://www.thfund.com.cn/aip') 了解更多
+											.tab-more-icon
+												img(src='/public/images/home/arrow-white.png', tppabs='http://www.thfund.com.cn//public/images/home/arrow-white.png')
+							// 子女教育Tab
+							#zinvjiaoyu.tab-pane.fade.in
+								.row.margin-clear
+									.col-md-12.padding-clear.bg-color-edeeed.home-bg
+										.col-md-7.padding-clear.tab-color-img-box
+											.padding-clear.box-shadow-clear
+												.tab-img-container
+													img(style='max-width: none', src='/public/images/home/picture5chuguoliuxue_0.jpg', tppabs='http://cdn-thweb.tianhongjijin.com.cn/picture5chuguoliuxue_0.jpg', alt='')
+										.col-md-5.padding-clear.margin-top-15
+											.box-intro.box-style-1.box-text-center.padding-clear.box-shadow-clear.padding-left-15.object-non-visible.animated.object-visible.fadeInRight(data-animation-effect='fadeInRight', data-effect-delay='200')
+												div
+													div(style='white-space: nowrap;')
+														h5.font30.text-left 钱生钱不难，减轻家长负担
+														.font14.font-color-a0a0a0.margin-todiv-5.margin-bottom-15.text-left 留学费用高，懂得投资才更重要。
+														.font14.text-left.font-color-dark
+															p.info(style="margin-top: 0.667rem; margin-bottom: 0.667rem; font-family: 'Helvetica Neue'; font-size: 15px; line-height: 24px; widows: auto;")
+																| 学费高，高不过期许与骄傲
+																br
+																span(style='widows: auto;')
+																	| 负担重，才更需要拿钱生钱
+																	br
+																span(style='widows: auto;') 个性化理财，专业严谨可信赖
+													.text-left.padding-top-15(style='white-space: nowrap;')
+														span.btn-pro-box
+															a.btn.bg-color-8abc5d.margin-right-15.margin-top-0.line-height-28(href='aip.htm', tppabs='http://www.thfund.com.cn/aip') 了解定投计划
+													h5.font30.text-left
+														br
+										.tab-color-panel-5.object-non-visible.animated.object-visible.fadeIn(data-animation-effect='fadeIn', data-effect-delay='300')
+										.tab-color-panel-text.object-non-visible.animated.object-visible.fadeInLeft(data-animation-effect='fadeInLeft', data-effect-delay='300')
+											.tab-more
+												a(href='aip.htm', tppabs='http://www.thfund.com.cn/aip') 了解更多
+											.tab-more-icon
+												img(src='/public/images/home/arrow-white.png', tppabs='http://www.thfund.com.cn//public/images/home/arrow-white.png')
+			// 
+			section.section.padding-bottom-0.padding-top-15.margin-top-20
+				.container.padding-clear
+					p#thfund-numstory.font16.margin-bottom-10  数说火星人
+					.line-1px-dark
+					.row.margin-clear.padding-top-15
+						.col-md-12.padding-clear.th-number
+							.col-md-6.padding-clear
+								.row.margin-clear
+									.graph-box
+										.graph-bgimg-box
+											img(src='/public/images/home/1481686542179261.png')
+									
+										.yuqing-189
+											
+							.col-md-6.padding-clear
+								.col-md-5.padding-clear.owl-pro-num-box
+									.row.margin-clear
+										#owl-pro-num
+											.item
+												div
+													#ani223.font90(data-animation-effect='fadeIn', data-effect-delay='300')
+														img(src='/public/images/home/1481687197939373.png')
+								.col-md-7.padding-clear.num-product-box
+									.num-p-box1.num-product-box
+										.num-15.num-product-box
+											img(src='/public/images/home/1463041296405750.png')
+									.num-p-box2.num-product-box
+										.num-22.num-product-box
+											img(src='/public/images/home/1481700972941387.png')
+			section.section.clearfix.padding-clear.margin-top-40.object-non-visible(data-animation-effect='fadeInUpsmall', data-effect-delay='100')
+				.container.padding-clear.institution-border-set
+					.row.margin-clear
+						.col-md-6.padding-clear.padding-right-15.object-non-visible(data-animation-effect='', data-effect-delay='100')
+							.index-news-box
+								h4.text-left.border-set-bottom-gray.title
+									i
+										img(src='/public/images/home/newsicon1.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/front/newsicon1.png')
+									| 火星人公告
+									span.pull-right.font12
+										a.font-red(href='cnotice_list.htm', tppabs='http://www.thfund.com.cn/cnotice_list')
+											i
+												img(src='/public/images/home/more-icon.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/front/more-icon.png')
+								.cnotice
+									.view.view-front-notice-list.view-id-front_notice_list.view-display-id-ad.view-dom-id-913e9bff6ce2879656910c781356c1f0
+										.view-content
+											ul
+												li
+													a(href='cnotice/18393.htm', tppabs='http://www.thfund.com.cn/cnotice/18393') 关于易宝支付新增五家银行渠道的提示
+													span.pull-right 2016-11-15
+												li
+													a(href='cnotice/18370.htm', tppabs='http://www.thfund.com.cn/cnotice/18370') 关于天天盈系统升级的公告
+													span.pull-right 2016-11-08
+												li
+													a(href='cnotice/18270.htm', tppabs='http://www.thfund.com.cn/cnotice/18270') 火星人基金管理有限公司关于旗下基金所持“伊利股份”估值方法调整...
+													span.pull-right 2016-10-11
+												li
+													a(href='cnotice/18080.htm', tppabs='http://www.thfund.com.cn/cnotice/18080') 火星人基金管理有限公司关于旗下基金所持“城投控股”估值方法调整...
+													span.pull-right 2016-08-13
+												li
+													a(href='sites/default/files/funddata/kaihuxiey.pdf', tppabs='http://www.thfund.com.cn/sites/default/files/funddata/kaihuxiey.pdf') 火星人基金管理有限公司网上交易直销自助式前台服务协议
+													span.pull-right 2016-08-10
+						.col-md-6.padding-clear.padding-left-15.object-non-visible(data-animation-effect='', data-effect-delay='100')
+							.index-news-box
+								h4.text-left.border-set-bottom-gray.title
+									i
+										img(src='/public/images/home/newsicon2.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/front/newsicon2.png')
+									| 火星人新闻
+									span.pull-right.font12
+										a.font-red(href='about/news_list.htm', tppabs='http://www.thfund.com.cn/about/news_list')
+											i
+												img(src='/public/images/home/more-icon.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/front/more-icon.png')
+								.cnotice
+									.view.view-front-notice-list.view-id-front_notice_list.view-display-id-news.view-dom-id-576417fbea7459e4c3bd31936ac71762
+										.view-content
+											ul
+												li
+													a(href='news/18447.htm') 债市投资难度加大 火星人固收团队实力护航
+													span.pull-right 2016-12-08
+												li
+													a(href='news/18428.htm') 火星人基金李骏：智能投顾服务开启公募基金新篇章
+													span.pull-right 2016-11-29
+												li
+													a(href='news/18427.htm') 三管齐下，火星人基金打造投研“实力派”
+													span.pull-right 2016-11-29
+												li
+													a(href='news/18401.htm') 火星人基金刘硕凌：人工智能提升公募投研的效率和能力
+													span.pull-right 2016-11-18
+												li
+													a(href='news/18392.htm') 基金公司获准港股通交易权限 火星人基金拔得头筹
+													span.pull-right 2016-11-14
+					.row.margin-clear
+						.col-md-6.padding-clear.padding-right-15.object-non-visible(data-animation-effect='', data-effect-delay='100')
+							.index-news-box
+								h4.text-left.border-set-bottom-gray.title
+									i
+										img(src='/public/images/home/newsicon3.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/front/newsicon3.png')
+									| 基金公告
+									span.pull-right.font12
+										a.font-red(href='notice_list.htm', tppabs='http://www.thfund.com.cn/notice_list')
+											i
+												img(src='/public/images/home/more-icon.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/front/more-icon.png')
+								// <div class="separator-2"></div>
+								.cnotice
+									.view.view-front-notice-list.view-id-front_notice_list.view-display-id-notice.view-dom-id-a9fc09c43f71f74789c4e443f8292082
+										.view-content
+											ul
+												li
+													a(href="javascript:if(confirm('http://cdn-thweb.tianhongjijin.com.cn/fundnotice/xingjian11yue.pdf  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�  \n\n����Ҫ�ӷ�����������?'))window.location='http://cdn-thweb.tianhongjijin.com.cn/fundnotice/xingjian11yue.pdf'", tppabs='http://cdn-thweb.tianhongjijin.com.cn/fundnotice/xingjian11yue.pdf') 行健宏扬中国基金每月基金报告（2016年11月）
+													span.pull-right 2016-12-16
+												li
+													a(href='notice/18454.htm', tppabs='http://www.thfund.com.cn/notice/18454') 火星人基金管理有限公司关于增加上海凯石财富基金销售有限公司为旗...
+													span.pull-right 2016-12-14
+												li
+													a(href='notice/18452.htm', tppabs='http://www.thfund.com.cn/notice/18452') 火星人基金管理有限公司关于火星人安盈灵活配置混合型证券投资基金暂...
+													span.pull-right 2016-12-13
+												li
+													a(href="javascript:if(confirm('http://cdn-thweb.tianhongjijin.com.cn/fundnotice/xinhhuolsms.pdf  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�  \n\n����Ҫ�ӷ�����������?'))window.location='http://cdn-thweb.tianhongjijin.com.cn/fundnotice/xinhhuolsms.pdf'", tppabs='http://cdn-thweb.tianhongjijin.com.cn/fundnotice/xinhhuolsms.pdf') 火星人新活力灵活配置混合型发起式证券投资基金招募说明书(更新)
+													span.pull-right 2016-12-12
+												li
+													a(href="javascript:if(confirm('http://cdn-thweb.tianhongjijin.com.cn/fundnotice/xinhuolgx-12.12.pdf  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�  \n\n����Ҫ�ӷ�����������?'))window.location='http://cdn-thweb.tianhongjijin.com.cn/fundnotice/xinhuolgx-12.12.pdf'", tppabs='http://cdn-thweb.tianhongjijin.com.cn/fundnotice/xinhuolgx-12.12.pdf') 火星人新活力灵活配置混合型发起式证券投资基金招募说明书(更新)...
+													span.pull-right 2016-12-12
+						.col-md-6.padding-clear.padding-left-15.object-non-visible(data-animation-effect='', data-effect-delay='100')
+							.index-news-box
+								h4.text-left.border-set-bottom-gray.title
+									i
+										img(src='/public/images/home/newsicon4.png')
+									| 火星人视点
+									span.pull-right.font12
+										a.font-red(href='viewpoint_list.htm')
+											i
+												img(src='/public/images/home/more-icon.png')
+								.cnotice
+									.view.view-front-notice-list.view-id-front_notice_list.view-display-id-viewpoint_image.view-dom-id-4e15e9f801d93e9e660bd90386fedf58
+										.view-content
+											div
+												.index-news.clearfix
+													.index-news-img
+														img.img-responsive(src='/public/images/home/guandian-thum.png')
+													.index-news-content.clearfix
+														h3.font14.font-color-434343
+															a(href="") 火星人财智周刊-20150706
+															span.index-abstact-date 2015-07-06
+														.index-news-body
+															p.font10.font-color-959595
+															a.more.pull-left.font-color-434343(href="") 阅读全文
+									.cnotice
+										.view.view-front-notice-list.view-id-front_notice_list.view-display-id-viewpoint.view-dom-id-b9a58b49fb40cf3081e1385af93333c1
+											.view-content
+												ul
+													li
+														a(href="") 火星人财智周刊-20150623
+														span.pull-right 2015-06-23
+													li
+														a(href="") 火星人财智周刊-20150525
+														span.pull-right 2015-06-01
+		
+			// 客户服务
+			section.section.padding-bottom-0.padding-top-0.margin-top-5.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='100')
+				.container.padding-clear
+					p.font16.margin-top-10  客户服务
+					.line-1px-dark
+					.row.margin-clear(style="padding-bottom:20px")
+						.col-md-12.padding-clear
+							ul.nav.nav-help-lists.index-help-nav(role='tablist')
+								li
+									a(href='qa_list.htm', tppabs='http://www.thfund.com.cn/qa_list')
+										i
+											img(src='/public/images/home/service-iocn1.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/front/service-iocn1.png')
+										| Q&A问答
+								li
+									a(target='_blank', href="javascript:if(confirm('http://123.57.71.109:8080/OnlineCustomer/main.html  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�  \n\n����Ҫ�ӷ�����������?'))window.location='http://123.57.71.109:8080/OnlineCustomer/main.html'", tppabs='http://123.57.71.109:8080/OnlineCustomer/main.html')
+										i
+											img(src='/public/images/home/service-iocn2.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/front/service-iocn2.png')
+										| 在线客服
+								li
+									a(target='_blank', href='qa_list-pc=49&sc=50.htm', tppabs='http://www.thfund.com.cn/qa_list?pc=49&sc=50')
+										i
+											img(src='/public/images/home/service-iocn3.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/front/service-iocn3.png')
+										| 新手入门
+								li
+									a(target='_blank', href='qa_list-pc=17&sc=80.htm', tppabs='http://www.thfund.com.cn/qa_list?pc=17&sc=80')
+										i
+											img(src='/public/images/home/service-iocn4.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/front/service-iocn4.png')
+										| 表单下载
+								li
+									a(target='_blank', href='qa_list-pc=17&sc=54.htm', tppabs='http://www.thfund.com.cn/qa_list?pc=17&sc=54')
+										i
+											img(src='/public/images/home/service-iocn5.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/front/service-iocn5.png')
+										| 直销中心
+								li.margin-right-0
+									a(href='about/contact.htm', tppabs='http://www.thfund.com.cn/about/contact')
+										i
+											img(src='/public/images/home/service-iocn6.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/front/service-iocn6.png')
+										| 联系我们
+			
+
+	
+block script
+	script.
+		function checkCurrentChannel(n, sum) {
+			for (var i = 1; i <= sum; i++) {
+				document.getElementById("nav" + i).className = "nav" + i;
+			}
+			document.getElementById("nav" + n).className = "nav" + n + " fonu";
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

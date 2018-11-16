@@ -1,0 +1,561 @@
+extends layout
+
+block content
+	#skip-link
+		
+	.scrollToTop
+		i.icon-up-open-big
+	.page-wrapper
+		.scrollToTop
+			i.icon-up-open-big
+		include lib/header
+		//副导航
+		.page-intro
+			.container
+				.row
+					.col-md-12.padding-clear
+						ol.th-subnav
+							li.active
+								a(href='#page1')  余额宝大数据  
+							li
+								a(href='#page2')   我的余额宝数据
+							li
+								a(href="javascript:if(confirm('https://www.baofen.cn/  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��һ��ʹ��δ֧��Э��ĵ�ַ(����: gopher)��  \n\n����Ҫ�ӷ�����������?'))window.location='https://www.baofen.cn/'", tppabs='https://www.baofen.cn/', target='_blank')  宝粉网 
+							li
+								a(href='#page3')  解读余额宝 
+							li
+								a(href='yuebao/emotions.htm', tppabs='http://www.thfund.com.cn/yuebao/emotions', target='_blank')  余额宝情绪指数 
+							li
+								a(href='#page4')  余额宝工具 
+							li
+								a(href='#page5')  常见问题 
+		//内容
+		.row
+		// main-container start
+		#balace_bao_phone
+			.section.section1
+				.clearfix
+					.container
+						.section-box.star-box
+							.stars
+							.row
+								#container
+									.flip
+										.emotions-index
+											.k-m.number
+											.t-m.number
+											.m.number
+											.comma.sign ,
+											.h-k.number
+											.t-k.number
+											.k.number
+											.comma.sign ,
+											.h.number
+											.t.number
+											.single.number
+										.wei 位
+								h3 聪明的小伙伴加入天弘余额宝
+								p
+									| 余额宝为国内首只互联网基金，专为支付宝定制，目前仍是中国规模最大的货币基金。
+									br
+									|			    全称：天弘余额宝货币市场基金 基金代码：000198
+							.row
+								a.moving.smooth-scroll(href='#page1')
+									img(src='ftwo/images/yuebao/down-arrow-white.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/yuebao/down-arrow-white.png')
+			
+			#page1.section.section2
+				.clearfix
+					.container
+						.row
+							.col-md-12
+								.section-box
+									p.text-center.font16.margin-top-40.font-color-7ecef4 截止2016 年3季度，已经为用户赚取
+									h1#about.text-center.font60.margin-bottom-30.font-color-489-003567
+										| 534
+										span.yiyuan 亿元
+									ul.row.inline-block
+										li.col-md-3.margin-left-150
+											p.text-center.font12.small-top.margin-bottom-10 时间
+											p#page2-slide-date.lead.text-center.font24.font-color-003567
+												| 2016年3季度
+										li.col-md-3
+											p.text-center.font12.small-top.margin-bottom-10 当季度累计收益
+											p#page2-silde-num.lead.text-center.font24.font-color-003567 48.55亿元
+										li.col-md-3
+											p.text-center.font12.small-top.margin-bottom-10 季度涨幅
+											p#float-rate.lead.text-center.font24.font-color-003567
+												| 1.01%
+									.row
+										.col-md-11.col-md-offset-1.padding-clear
+											.row
+												.side.vertical-divider-left
+													.block.clearfix
+														h2
+															| 时间 
+															span#slider4text 0
+														img(src='ftwo/images/yuebao/indexpraphbg2.jpg', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/yuebao/indexpraphbg2.jpg')
+													.indexgraphbox
+														#chart
+													.xjidu  (季度)
+													.yyiyuan  (亿元)
+			#page2.section.section4
+				.container
+					.row
+						.col-md-12
+							.section-box
+								.inner
+									.txt
+										h2.font40.font-white 宝粉网—余额宝用户自己的网站
+										p
+											| 宝粉网是余额宝用户的权益中心，已有2000万余额宝用户在这里兑换专属权益、学习理财知识。宝粉网希望以宝粉共同的身份认知和生活形态为基础，打造社交生活平台， 推动客户帮助客户。
+										p
+											a(href="javascript:if(confirm('https://www.baofen.cn/  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��һ��ʹ��δ֧��Э��ĵ�ַ(����: gopher)��  \n\n����Ҫ�ӷ�����������?'))window.location='https://www.baofen.cn/'", tppabs='https://www.baofen.cn/', target='_blank') 进入宝粉社区
+											|  >
+									ul.inline-block.num-bin
+										li
+											#myStat11(data-dimension='220', data-text='76.2%', data-info=' ', data-width='15', data-fontsize='38', data-percent='76.2', data-fgcolor='#14b9d6', data-fill='#323a45')
+											span
+												| 小伙伴
+												br
+												| 对炒股很有兴趣
+										li
+											#myStat12(data-dimension='220', data-text='89.3%', data-info='', data-width='15', data-fontsize='38', data-percent='89.3', data-fgcolor='#14b9d6', data-fill='#323a45')
+											span
+												| 小伙伴
+												br
+												| 在基金上颇有心得
+										li
+											#myStat13(data-dimension='220', data-text='50.1%', data-info='', data-width='15', data-fontsize='38', data-percent='50.1', data-fgcolor='#14b9d6', data-fill='#323a45')
+											span
+												| 小伙伴
+												br
+												| 很是关心房市车市
+										li
+											#myStat14(data-dimension='220', data-text='70.2%', data-info='', data-width='15', data-fontsize='38', data-percent='70.2', data-fgcolor='#14b9d6', data-fill='#323a45')
+											span
+												| 小伙伴
+												br
+												| 更关心子女教育
+		
+			#page3.section.section5.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='300')
+				// div start
+				.clearfix
+					.container
+						.section-box
+							.row
+								.col-md-12
+									br
+									h1.text-center.space-top.font40 解读余额宝
+									p.lead.text-center 遵循安全性和流动性优先原则，通过对宏观经济、政策环境、市场状况和资金供求地深入分析，在严格控制风险的前提下，主动构建及调整投资组合，力争获取超额收益。
+									.row
+										.col-md-6
+											.num-box
+												// <h3 class="margin-bottom-25 text-center font16 font-white">2015年第三季度余额宝资产组合情况</h3>
+												.table.table-bordered
+													h3.margin-bottom-6.text-center.font16.font-white
+														span(style='font-size: 18px;') 2016年第二季度余额宝资产组合情况
+													table(cellpadding='0', cellspacing='0', width='665')
+														colgroup
+															col(width='307', style=';width:307px')
+															col(width='177', style=';width:177px')
+															col(width='181', style=';width:181px')
+														tbody
+															tr.firstRow(height='20', style='height:20px')
+																td(height='20', width='307') 项目
+																td(width='177', style='') 金额
+																td(width='181', style='') 占总资产比例（%）
+															tr(height='20', style='height:20px')
+																td(height='20') 固定收益投资
+																td 212,492,622,997.99
+																td 25.73
+															tr(height='20', style='height:20px')
+																td(height='20') 其中：债券
+																td 212,492,622,997.99
+																td 25.73
+															tr(height='20', style='height:20px')
+																td(height='20')       资产支持证券
+																td －
+																td －
+															tr(height='20', style='height:20px')
+																td(height='20') 买入返售金融资产
+																td 10,227,773,007.88
+																td 1.24
+															tr(height='20', style='height:20px')
+																td(height='20') 其中: 买断式回购的买入返售金融资产
+																td 497,670,570.88
+																td 0.06
+															tr(height='20', style='height:20px')
+																td(height='20') 银行存款和结算备付金合计
+																td 601,135,619,111.75
+																td 72.8
+															tr(height='20', style='height:20px')
+																td(height='20') 其他资产
+																td 1,872,454,636.97
+																td 0.23
+															tr(height='20', style='height:20px')
+																td(height='20') 合计
+																td 825,728,469,754.59
+																td 100
+										// sidebar start
+										.col-md-6.padding-clear
+											.yuqing-index-box
+												.row.margin-clear
+													.graph-box
+														.graph-bgimg-box
+															img(src='ftwo/images/yuebao/graph-bg2.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/yuebao/graph-bg2.png')
+														h5.text-center.font14.yuqing-title 天弘大数据研究余额宝入市情绪指数
+												.row.margin-clear.graph-date
+													ul.list-inline
+														li.padding-left-18 2016.01
+														li 2016.02
+														li 2016.03
+														li 2016.04
+												//
+													<div class="row margin-clear curve-red object-non-visible animated object-visible fadeInUp" data-animation-effect="fadeInUp" data-effect-delay="500"><img src="image/curve-red.png"></div>
+													<div class="row margin-clear curve-blue object-non-visible animated object-visible fadeInUp" data-animation-effect="fadeInUp" data-effect-delay="1000"><img src="image/curve-blue.png"></div>
+										// sidebar end
+									.row
+										.col-md-4
+											.read-bao-box.object-non-visible(data-animation-effect='fadeInUpSmall')
+												img(src='ftwo/images/yuebao/Icon-Locked1.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/yuebao/Icon-Locked1.png', alt='')
+												p.minititle 全额承担
+												p
+													| 众安保险
+													font(color='#dc4044') 全额承保
+													|  全额赔付
+												small 支付宝客服热线：95118-1
+										.col-md-4
+											.read-bao-box.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='100')
+												img(src='ftwo/images/yuebao/Icon-Laptop2.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/yuebao/Icon-Laptop2.png', alt='')
+												p.minititle 收益日结
+												p
+													| 七日年化收益率(20161215)：
+													font(color='#dc4044') 2.674%
+													| *
+												small 注：数据来源：wind
+										.col-md-4
+											.read-bao-box.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='300')
+												img(src='ftwo/images/yuebao/Icon-Basket3.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/yuebao/Icon-Basket3.png', alt='')
+												p.minititle 随时存取
+												p
+													| 起步
+													font(color='#dc4044') 1元
+													| ，随时网上消费或提现
+									br
+
+			#page4.section.section6.bg-color-dddddd.clearfix.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='300')
+				.container
+					.section-box
+						.row.margin-clear
+							.col-md-12.padding-clear
+								.section-box
+									h2.text-center.space-top.title.font40.margin-top-30.margin-bottom-60 余额宝TIPS
+									.col-md-5.col-md-offset-1
+										.tabs-style-2.tab-gonglv
+											// Nav tabs
+											ul.nav.nav-tabs#yue-ul
+												li.active
+													a(href='#gonglv-tab1', role='tab', data-toggle='tab') 转入攻略
+												li
+													a(href='#gonglv-tab2', role='tab', data-toggle='tab') 转出攻略
+											// Tab panes
+											.tab-content
+												#gonglv-tab1.tab-pane.fade.active.in
+													.row.margin-clear
+														table.table.table-hover.text-center.font-white#yue-tab-time
+															thead
+																tr
+																	th 转入时间
+																	th 首次计收益时间
+																	th 收益显示时间
+															tbody
+																tr
+																	td 上周五15:00～周一15:00
+																	td 周二
+																	td 周三
+																tr
+																	td 周一15:00～周二15:00
+																	td 周三
+																	td 周四
+																tr
+																	td 周二15:00～周三15:00
+																	td 周四
+																	td 周五
+																tr
+																	td 周三15:00～周四15:00
+																	td 周五
+																	td 周六
+																tr
+																	td 周四15:00～周五15:00
+																	td 下周一
+																	td 下周二
+																tr
+																	td 周五15:00～下周一15:00
+																	td 下周二
+																	td 下周三
+																tr
+																tr
+																	td(colspan='3') 注：周一至周五为工作日。资金被确认后，周末、节假日均有收益.
+												#gonglv-tab2.tab-pane.fade
+													.row.margin-clear
+														table.table.padding-clear.text-center.font-white
+															tbody
+																tr
+																	td(style="border:none")
+																		.zhuanchu
+																			table.table-hover.zctable.table-bordered
+																				tbody
+																					tr
+																						td 转出到支付宝
+																						td
+																							a(href="javascript:if(confirm('https://cshall.alipay.com/lab/help_detail.htm?help_id=261939  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��һ��ʹ��δ֧��Э��ĵ�ַ(����: gopher)��  \n\n����Ҫ�ӷ�����������?'))window.location='https://cshall.alipay.com/lab/help_detail.htm?help_id=261939'", tppabs='https://cshall.alipay.com/lab/help_detail.htm?help_id=261939', target='_blank') 查看
+																						td
+																						td
+																					tr
+																						td 转出到本人储蓄卡
+																						td
+																							a(href="javascript:if(confirm('https://cshall.alipay.com/lab/help_detail.htm?help_id=261939  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��һ��ʹ��δ֧��Э��ĵ�ַ(����: gopher)��  \n\n����Ҫ�ӷ�����������?'))window.location='https://cshall.alipay.com/lab/help_detail.htm?help_id=261939'", tppabs='https://cshall.alipay.com/lab/help_detail.htm?help_id=261939', target='_blank') 查看
+																						td
+																						td
+									.col-md-5
+										.tabs-style-2.tab-shouyi
+											h3.text-center 收益计算器
+											// Nav tabs
+											ul.nav.nav-tabs(role='tablist')
+												li.active
+													a(href='#h2tab1', role='tab', data-toggle='tab') 日收益
+												li
+													a(href='#h2tab2', role='tab', data-toggle='tab') 区间收益
+
+												.tab-content
+													#h2tab1.tab-pane.fade.active.in
+														.space-bottom
+														.row.margin-clear
+															form#dayily_return.form-horizontal(name='dayily_return', role='form')
+																.form-group.margin-clear
+																	label.col-md-4.control-label 购买金额：
+																	.col-md-8.padding-left-0.margin-bottom-20
+																		input#dreturn_buy_amount.form-control.yue-inp(name='dreturn_buy_amount', placeholder='', type='num')
+																.form-group
+																	label.col-md-4.control-label 选择日期：
+																	.col-md-8.padding-left-0.margin-bottom-10
+																		input#dreturn_buy_date.form-control.yue-inp(name='dreturn_buy_date', placeholder='')
+																.form-group
+																	.col-md-offset-4.col-md-8.padding-left-0
+																		button.btn.btn-default(type='button', onclick='dailyReturn()') 计算收益
+														div
+															span.count-result-label 一天的收益：
+															span#dreturnTextBox.count-result(name='dreturnTextBox')
+															small 元
+													#h2tab2.tab-pane.fade
+														.space-bottom
+														.row.margin-clear
+															form#range_return.form-horizontal(name='range_return', role='form')
+																.form-group.margin-clear
+																	label.col-md-4.control-label 购买金额：
+																	.col-md-8.padding-left-0.margin-bottom-20
+																		input#range_amount.form-control.yue-inp(name='range_amount', placeholder='', type='num')
+																.form-group
+																	label.col-md-4.control-label 选择日期：
+																	.col-md-8.padding-left-0.margin-bottom-10
+																		input#range_date.form-control.yue-inp(name='range_date', placeholder='')
+																.form-group
+																	.col-md-offset-4.col-md-8.padding-left-0
+																		button.btn.btn-default(type='botton', onclick='rangeReturn()') 计算收益
+														div
+															span.count-result-label 区间收益：
+															span#rangeTextBox.count-result(name='rangeTextBox')
+															small 元
+			// 常见问答
+			#page5.section.section7.clearfix.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='300')
+					.container
+						.row
+							.col-md-12
+								.section-box.margin-top-40
+									.link-target
+										a.placeholder
+										h2.text-center.font40 常见问答
+									.vertical.hc-tabs
+										ul.nav.nav-tabs.padding-top-20.col-md-4(role='tablist ')
+											li.active
+												a(href='#tab1', role='tab', data-toggle='tab') 支付宝的余额宝和天弘余额宝货币基金是什么关系？
+											li
+												a(href='#tab2', role='tab', data-toggle='tab') 余额宝货币基金的收益是怎么计算的？
+											li
+												a(href='#tab3', role='tab', data-toggle='tab') 余额宝货币基金的风险如何？会亏损吗？
+											li
+												a(href='#tab4', role='tab', data-toggle='tab') 什么是七日年化收益率？
+											li
+												a(href='#tab5', role='tab', data-toggle='tab') 什么是万份收益？
+											li
+												a(href='#tab6', role='tab', data-toggle='tab') 余额宝货币基金的最低投资金额是多少？
+											li
+												a(href='#tab7', role='tab', data-toggle='tab') 余额宝货币基金是否有交易费用？
+											li
+												a(href='#tab8', role='tab', data-toggle='tab') 转入余额宝的资金什么时候开始有收益？
+											li
+												a(href='#tab9', role='tab', data-toggle='tab') 余额宝可以随时转出吗？
+											li
+												a(href='#tab10', role='tab', data-toggle='tab') 余额宝非交易过户									
+										.tab-content#yue-tab
+											#tab1.tab-pane.fade.in.active
+												h5.title.margin-bottom-25.font18 支付宝的余额宝和天弘余额宝货币基金是什么关系？
+												.line-1px-dark
+												.row.margin-clear
+													.margin-top-20
+														p
+															| 余额宝是支付宝为实名认证客户提供的账户理财服务。目前余额宝的合作方为我们天弘基金公司，我们为余额宝提供了一款同名货币基金。客户转入余额宝的资金，即购买了余额宝货币基金，并享有余额宝货币基金的投资收益。
+											#tab2.tab-pane.fade
+												h5.title.margin-bottom-25.font18 余额宝货币基金的收益是怎么计算的？
+												.line-1px-dark
+												.row.margin-clear
+													.margin-top-20
+														p
+															| 余额宝货币基金每天都会公布每万份的收益。余额宝货币基金每份=1元，如果今天余额宝货币基金的每万份收益是1.1907元，那么就是说您余额宝货币基金中每10000元钱，就能得到1.1907元的收益。您可以通过以本网站旗下产品-余额宝货币基金-净值表现来查看该产品历史收益情况。
+											#tab3.tab-pane.fade
+												h5.title.margin-bottom-25.font18 余额宝货币基金的风险如何？会亏损吗？
+												.line-1px-dark
+												.row.margin-clear
+													.margin-top-20
+														p 余额宝基金是一款货币基金，主要投资于银行存款、有固定票息的债券等品种，风险级别较低，历史上国内市场同类产品尚未出现过年度亏损。
+											#tab4.tab-pane.fade
+												h5.title.margin-bottom-25.font18 什么是七日年化收益率？
+												.line-1px-dark
+												.row.margin-clear
+													.margin-top-20
+														p
+															| 七日年化收益率，是货币基金最近7日的平均收益水平换算成一年后计算出的收益值，相当于银行存款时说的年利率。该数据是一个参考值，仅供投资者参考。比如您看到数字是3.4840%，意思是说，按照最近7日收益水平来看，若您持有余额宝一年，年化收益率大概在这个水平，给您做参考用的，如果您要计算账户每日的实际收益，还请关注“每万份收益”这个指标。
+											#tab5.tab-pane.fade
+												h5.title.margin-bottom-25.font18 什么是万份收益？
+												.line-1px-dark
+												.row.margin-clear
+													.margin-top-20
+														p
+															| 万分收益是指把货币基金每天运作的收益平均摊到每一份额上，然后以1万份为标准进行衡量和比较的一个数据，它是具体每天计入投资者账户中的实际收益。例如您购买了20000元余额宝货币基金，当天的每万份收益为1.1907元，那么您当天的实际收益就是2*1.1907=2.3814元。
+											#tab6.tab-pane.fade
+												h5.title.margin-bottom-25.font18 余额宝货币基金的最低投资金额是多少？
+												.line-1px-dark
+												.row.margin-clear
+													.margin-top-20
+														p 余额宝货币基金最低投资额为1元，追加的单笔最低金额为1元的整数倍就可以。
+											#tab7.tab-pane.fade
+												h5.title.margin-bottom-25.font18 余额宝货币基金是否有交易费用？
+												.line-1px-dark
+												.row.margin-clear
+													.margin-top-20
+														p 余额宝货币基金没有交易手续费。 
+											#tab8.tab-pane.fade
+												h5.title.margin-bottom-25.font18 转入余额宝的资金什么时候开始有收益？
+												.line-1px-dark
+												.row.margin-clear
+													.margin-top-20
+														.table.table-bordered.text-center
+															table
+																thead
+																	tr
+																		th 转入时间
+																		th 基金公司确认时间
+																		th 首次计收益时间
+																		th 首次计收益显示时间
+																		th 备注
+																tbody
+																	tr
+																		td 上周五15:00～周一15:00
+																		td 周二
+																		td 周二
+																		td 周三
+																		td(rowspan='6') 注：周一~周五为工作日。资金被确认后，周末、节假日均有收益
+																	tr
+																		td 周一15:00～周二15:00
+																		td 周三
+																		td 周三
+																		td 周四
+																	tr
+																		td 周二15:00～周三15:00
+																		td 周四
+																		td 周四
+																		td 周五
+																	tr
+																		td 周三15:00～周四15:00
+																		td 周五
+																		td 周五
+																		td 周六
+																	tr
+																		td 周四15:00～周五15:00
+																		td 下周一
+																		td 下周一
+																		td 下周二
+																	tr
+																		td 周五15:00～下周一15:00
+																		td 下周二
+																		td 下周二
+																		td 下周三
+																	tr
+																		td(colspan='5') 每天收益计算公式：（余额宝资金/10000）*天弘基金公布的每万份收益
+																	tr
+																		td(colspan='5') 可以随时转出，实时到支付宝余额，转出当天（0:00-24:00）没有收益
+											#tab9.tab-pane.fade
+												h5.title.margin-bottom-25.font18 余额宝可以随时转出吗？
+												.line-1px-dark
+												.row.margin-clear
+													.margin-top-20
+														p 从支付宝平台转入余额宝的资金，可以随时转出。转出资金实时到达支付宝账户余额中。实时转出或消费不享受当天（0:00-24:00）收益。
+											#tab10.tab-pane.fade
+												h5.title.margin-bottom-25.font18 余额宝非交易过户
+												.line-1px-dark
+												.row.margin-clear
+													.margin-top-20
+														p
+															strong 第一步、辨别客户身份
+															br
+															|		客户办理余额宝非交易过户，需要将下述资料扫描并发送到天弘基金客服邮箱（service@thfund.com.cn），等待天弘基金初步审核。
+															br
+															strong 所需提交资料包括：
+															br
+															|			（1）继承人身份证双面复印件；
+															br
+															|			（2）死亡证明复印件；
+															br
+															|			（3）户口本复印件；（包括首页+常住人口登记卡户主页+继承人员页+被继承人员页）请证明被继承人和继承人之间的亲属关系
+															br
+															|			客户资料初步审核通过后，天弘基金客服将为客户查询余额宝信息并为其开立资产证明，用于开具公证书。
+															br
+															strong 第二步、收集并审核过户资料
+															br
+															|			客户持天弘基金开具的资产证明等资料到公证处开立公正书，并需要继承人开通余额宝账号，上述工作完成后，烦请客户扫描下述资料并发送至天弘基金客服邮箱。
+															br
+															|			（1）遗嘱及公证书/财产分配协议书及其公正书/法院判决书（天弘基金开具的资产证明，可用于开立公证书，公证书按照天弘基金非交易过户申请表要求开立并在公证书中写明基金份额由谁统一领取）；
+															br
+															|			（2）继承人支付宝账户截图（确保已经开通余额宝服务）截图签上继承人姓名
+															br
+															|			（3）填写《天弘基金管理有限公司非交易过户申请表》；
+															br
+															|			（4）“关于代为管理余额宝份额的说明”。若继承人中有未成年人，请填写此资料。若没有，则无需填写。
+															br
+															strong 第三步、寄送资料
+															br
+															|			客户填写资料无误并且通过天弘基金法务部门审核，审核通过客服中心将通知客户邮寄下述资料至天弘基金。
+															br
+															|			资料包括：
+															br
+															|			（1）遗嘱及公证书/财产分配协议书及其公正书/法院判决书（邮寄原件）；
+															br
+															|			（2）继承人身份证双面复印件；
+															br
+															|			（3）死亡证明复印件；
+															br
+															|			（4）继承人户口本复印件；（首页+常住人口登记卡户主页+继承人员页+被继承人员页）请证明被继承人和继承人之间的亲属关系
+															br
+															|			（5）继承人支付宝账户（确保已经开通余额宝服务）需要客户提供账户截图的打印版并签署继承者姓名
+															br
+															|			（6）《天弘基金管理有限公司非交易过户申请表》；姓名及个人信息及签字填写好，基金份额不填（一式三份）
+															br
+															|			（7）提交天弘基金认为确有必要的其它材料
+															br
+															|			请将申请表与身份证明资料一起邮寄至：
+															br
+															| 天津市河西区马场道59号天津国际经济贸易中心A座16楼，客户服务部 邮编：300203。
+															br
+															strong 办理时间：
+															| 收到客户邮寄资料后预计15个工作日内办理，并于办理完成后尽快通知投资者。
+

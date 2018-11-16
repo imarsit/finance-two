@@ -1,0 +1,368 @@
+extends layout
+
+block content
+	#skip-link
+		//- a.element-invisible.element-focusable(href='#main-content') 跳转到主要内容
+	.scrollToTop
+		i.icon-up-open-big
+	.page-wrapper
+		.scrollToTop
+			i.icon-up-open-big
+		include lib/header
+		.page-wrapper
+			section.banner
+				// slideshow start
+				.slideshow-boxed
+					// slider revolution start
+					.slider-banner-container
+						.slider-banner-2
+							ul
+								li(data-transition='', data-slotamount='7', data-masterspeed='0', data-title='special-account')
+									// main image
+									img(src='/public/images/bank/bank-banner.png', alt='special-account-banner', data-bgposition='center top', data-bgfit='', data-bgrepeat='no-repeat')
+									.tp-caption.large.sfl.tp-resizeme.font-white(data-x='692', data-y='67', data-speed='600', data-start='100', style='z-index: 6; white-space: nowrap;line-height: 48px; font-weight:500;border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 36px; font-weight:600;', data-endspeed='600')
+										| 信赖，源自实力
+									.tp-caption.large.sfl.tp-resizeme.font-white(data-x='692', data-y='126', data-speed='600', data-start='300', style='z-index: 6; line-height: 48px; font-weight:500;border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 24px;color:#00b7ee;', data-endspeed='600')
+										| 专注为银行提供金融整体解决方案
+									.tp-caption.sfb.large.tp-resizeme.font-white(data-x='692', data-y='214', data-speed='800', data-start='500', style='z-index: 6; width:420px;text-indent:2em;line-height: 30px; font-weight:500;border-width: 0px; font-size: 14px; margin: 0px; padding: 0px; color:#edeeed', data-endspeed='600')
+										div
+											p
+												| 一站式综合金融服务专家，因为懂你，所以专业！
+												br
+											p
+												| 天弘基金银行合作业务，突破传统银基合作模式，依托于互联网
+												br
+												|                                                 基因及资源整合能力，全面分析银行客户在资产管理、中间业务、互
+												br
+												| 联网发展、资产负债业务等方面的需求，设计个性化解决方案，提供
+												br
+												|                                                 全方位的综合金融服务。
+									.tp-caption.large.tp-resizeme.font-white(data-x='640', data-y='0', data-speed='800', data-start='500', style='z-index: 5;background-color: rgba(51, 57, 65, 0.88);mix-blend-mode: multiply; width:528px; height:400px;display:block;', data-endspeed='600')
+										.bank-banner-content-box
+					// slider revolution end
+		// slideshow end
+		// banner end
+		// 银行业务产品 start
+		.section.gray-bg.clearfix.object-non-visible.padding-clear.padding-bottom-70(data-animation-effect='fadeInUpSmall', data-effect-delay='0',style="margin-top:-30px;")
+			.white-bg
+				.container.padding-clear
+					// Tab navigation start
+					.row.box-shadow-clear.margin-clear
+						ul#bank-tab.nav.nav-tabs.bank-content-tab.box-shadow-clear.text-center(role='tablist')
+							li
+								a.margin-clear(href='#htab0', role='tab', data-toggle='tab', title='', aria-expanded='false')  负债业务 
+							li.active
+								a.margin-clear(href='#htab1', role='tab', data-toggle='tab', title='', aria-expanded='true')  资管业务 
+							li
+								a.margin-clear(href='#htab2', role='tab', data-toggle='tab', title='', aria-expanded='false')  中间业务 
+							li
+								a.margin-clear(href='#htab3', role='tab', data-toggle='tab', title='', aria-expanded='false')  互联网特色服务 
+					// Tab navigation end
+			.tab-content.gray-bg.clear-style.margin-top-60
+				// All the business start
+				#htab0.tab-pane.fade.announcement
+					.container.padding-clear.margin-top-100.min-height-300
+						.row.margin-clear
+							.col-md-12.padding-clear.margin-top-60
+								.col-md-3.padding-clear
+									.padding-clear.box-shadow-clear
+										.tab-img-container-all
+											img(src='/public/images/bank/bank-icon1.png', tppabs='http://www.thfund.com.cn//public/images/bank/bank-icon1.png', alt='')
+								.col-md-3.padding-clear
+									.padding-clear.box-shadow-clear
+										.tab-img-container-all
+											img(src='/public/images/bank/bank-icon2.png', tppabs='http://www.thfund.com.cn//public/images/bank/bank-icon2.png', alt='')
+								.col-md-3.padding-clear
+									.padding-clear.box-shadow-clear
+										.tab-img-container-all
+											img(src='/public/images/bank/bank-icon3.png', tppabs='http://www.thfund.com.cn//public/images/bank/bank-icon3.png', alt='')
+								.col-md-3.padding-clear
+									.padding-clear.box-shadow-clear
+										.tab-img-container-all
+											img(src='/public/images/bank/bank-icon4.png', tppabs='http://www.thfund.com.cn//public/images/bank/bank-icon4.png', alt='')
+				// All the business end
+				// Capital management business start
+				#htab1.tab-pane.fade.active.in
+					.container.padding-clear.min-height-700
+						.row.margin-clear.white-bg.bg-color-white
+							.col-md-12.padding-clear.tab-img-box
+								.col-md-6.padding-clear
+									.padding-clear.box-shadow-clear
+										.tab-img-container
+											img(src='/public/images/bank/mm-service-img.png', tppabs='http://www.thfund.com.cn//public/images/bank/mm-service-img.png', alt='')
+								.col-md-6.padding-clear.margin-top-15
+									.box-intro.box-style-1.box-text-center.padding-clear.box-shadow-clear.padding-left-15.object-non-visible.animated.object-visible.fadeInRight(data-animation-effect='fadeInRight', data-effect-delay='200')
+										div
+											h5.font22.text-left.margin-bottom-15 稳健但不保守，创新而有温度！
+											.font14.margin-todiv-5.margin-bottom-15.text-left 基于多年积淀的银行客户服务经验，天弘基金致力于全面满足银行资金委托、资产委托、风险管理、产品研发等个性化资管业务需求。
+											.font14.text-left • 资产委托
+											.font14.text-left • 资产委托
+											.font14.text-left • 产品研发
+						.row.margin-clear
+							.col-md-12
+								h5.font22.text-center.padding-bottom-10.margin-top-40 代表性产品解决方案
+								p.text-center.font14.margin-bottom-20 为不同风险承受能力的各类投资者定制设计
+								img.img-center(src='/public/images/bank/bank-chart-img.png', tppabs='http://www.thfund.com.cn//public/images/bank/bank-chart-img.png', alt='')
+						.row.margin-clear
+							.col-md-12.fof-diy
+								h5.font22.text-center.padding-bottom-10.margin-top-40 FOF定制型
+								h6.text-center 风险：低、较低、中等、较高、高
+								p.text-center.font14.margin-bottom-20.fof-summary
+									| FOF
+									| 作为“超级基金”，超越单一投资组合和单个投资经理的管理边界，配置大类资产、精选战术品种，优化风险收益，灵活多样的构建投资组合，以适应客户需求及投资环境
+								.row
+									.col-md-12.padding-clear
+										.padding-left-30.fof-diy-box
+											.row.fof-diy-content
+												.circle-color.fof-num-1 1
+												.fof-title
+													h5.font22 现金管理型
+													span 风险：低
+												p
+													| 适用于：有灵活性现金管理需求的投资者
+													br
+													|                                                     依托于余额宝团队先进成熟的管理经验，可根据客户个性化现金需求，量身定制现金管理方案。
+											// <hr style="border:1px dashed; height:1px" color="#DDDDDD">
+											hr(style='border-bottom:1px  dotted  #3b414a')
+											.row.fof-diy-content
+												.circle-color.fof-num-2 2
+												.fof-title
+													h5.fof-sub-title 债券型
+													span 风险：较低
+												p
+													| 适用于：规避风险的稳健型投资者
+													br
+													|                                                     主要投资于具有良好流动性的固定收益类金融工具，以价值分析为基础，定性与定量相结合，通过主动管理和有效的风险控制，实现风险与收益的优化平衡。
+											hr(style='border-bottom:1px  dotted  #3b414a')
+											.row.fof-diy-content
+												.circle-color.fof-num-3 3
+												.fof-title
+													h5.fof-sub-title 保本增值型
+													span 风险：中等偏低
+												p
+													| 适用于：有较低风险承受能力的平衡型投资者
+													br
+													|                                                     运用保本策略的纪律性量化规则，从债券中获取稳定收益，从股票上谋求增强收益，一站式资产配置，打开稳定收益空间。
+											hr(style='border-bottom:1px  dotted  #3b414a')
+											.row.fof-diy-content
+												.circle-color.fof-num-4 4
+												.fof-title
+													h5.fof-sub-title 量化对冲型
+													span 风险：中等偏低
+												p.last-p-padding-bottom-0
+													| 适用于：有一定风险承受能力的平衡型投资者
+													br
+													|                                                     优中选优，筛选多策略，多投资风格的优秀投资管理人，运用量化工具对冲风险，谋求长期稳健的投资收益。
+											hr(style='border-bottom:1px  dotted  #3b414a')
+											.row.fof-diy-content
+												.circle-color.fof-num-5 5
+												.fof-title
+													h5.fof-sub-title 绝对回报型
+													span 风险：中等偏高
+												p
+													| 适用于：有一定风险承受能力的进取型投资者
+													br
+													|                                                     自下而上与自上而下相结合，通过对市场整体投资环境的研判进行大类资产配置和精选个股创造超额收益，通过清晰的风控指标控制下行风险和回撤。
+											hr(style='border-bottom:1px  dotted  #3b414a')
+											.row.fof-diy-content
+												.circle-color.fof-num-6 6
+												.fof-title
+													h5.fof-sub-title 定向增发型
+													span 风险：较高
+												p.last-p-padding-bottom-0
+													| 适用于：有一定风险承受能力的积极型投资者
+													br
+													|                                                     依托于大数据研究，择时精选个股标的，以基本面为核心分析择价，建立标的池，实时跟踪，分时点建仓、差异化投资策略、分散化投资，谋求超额收益。
+				// Capital management business end
+				// Intermediary business start
+				#htab2.tab-pane.fade
+					.container.padding-clear.min-height-700
+						.row.margin-clear.white-bg
+							.col-md-12.padding-clear.tab-img-box
+								.col-md-6.padding-clear
+									.padding-clear.box-shadow-clear
+										.tab-img-container
+											img(src='/public/images/bank/center-service-img.png', tppabs='http://www.thfund.com.cn//public/images/bank/center-service-img.png', alt='')
+								.col-md-6.padding-clear.margin-top-15
+									.box-intro.box-style-1.box-text-center.padding-clear.box-shadow-clear.padding-left-15.object-non-visible.animated.object-visible.fadeInRight(data-animation-effect='fadeInRight', data-effect-delay='200')
+										div
+											h5.font22.text-left.margin-bottom-15 变革，从不止步！
+											.font14.margin-todiv-5.margin-bottom-15.text-left 除传统托管、代销业务合作之外，天弘基金结合银行客户的多元化中间业务需求，可提供投资研究、风险管理、投行业务方面的先进金融服务。
+											.font14.text-left • 托管业务
+											.font14.text-left • 代销业务
+											.font14.text-left • 投顾业务
+											.font14.text-left • 投行业务
+						// Custody business start
+						.row.margin-clear.padding-top-60
+							.col-md-12.margin-bottom-40
+								.col-md-2
+									p.font22.line-height-30
+										i.font-color-d23337.font22.line-height-30.padding-right-25 •
+										| 托管业务
+								.col-md-10
+									p.font14.line-height-30 截至2015年末，天弘基金委托银行托管的公募基金、专户专项等产品资产规模合计超万亿。
+							.col-md-12.margin-bottom-40
+								.col-md-2
+									p.font22.line-height-30
+										i.font-color-d23337.font22.line-height-30.padding-right-25 •
+										| 代销业务
+								.col-md-10
+									p.font14.line-height-30 不止于代销传统公募基金，直击银行零售客户痛点，深度挖掘教育、养老、现金理财等多场景需求，联合开发定制化投资产品。
+							.col-md-12.margin-bottom-40
+								.col-md-2
+									p.font22.line-height-30
+										i.font-color-d23337.font22.line-height-30.padding-right-25 •
+										| 投顾业务
+								.col-md-10
+									p.font14.line-height-30 利用自身投研优势，并借助大数据挖掘技术，优选泛资管领域的领先机构进行合作，为银行客户提供证券相关投资建议、规划方案，协助投资决策等服务。
+							.col-md-12.margin-bottom-40
+								.col-md-2
+									p.font22.line-height-30
+										i.font-color-d23337.font22.line-height-30.padding-right-25 •
+										| 投行业务
+								.col-md-10
+									p.font14.line-height-30
+										| 天弘基金资产证券化项目执行团队经验丰富，依托于蚂蚁金服股东强大支持，有赖于万亿资管规模“零”差错清算技术实力，运用独家专业数理模型，精确测算风险收益，迄今已成功运作发行规模超200亿。
+						// Custody business end
+						// Representative public offering products start
+						.row.margin-clear.padding-top-20
+							.col-md-12.fund-npv
+								h5.font22.text-center.margin-bottom-60 代表性公募产品
+								table.table.table-striped
+									thead
+										tr
+											th 基金名称
+											th 类型
+											th 特点
+											th 可用于
+											th 风险收益特征
+									tbody
+										tr
+											td.fund-npv-name 天弘现金管家
+											td 货币市场基金
+											td 余额宝基金经理掌舵，流动性管理及风控经验丰富
+											td 现金管理
+											td 低
+										tr
+											td.fund-npv-name 天弘安康养老
+											td 保守配置混合型
+											td 首只获“金牛奖”的养老基金
+											td 养老投资等中长期理财
+											td 中等偏低
+										tr
+											td.fund-npv-name 天弘新价值
+											td 灵活配置混合型
+											td 灵活运用资产配置和多策略，力争超越股债平均收益
+											td 平衡风险收益的中长期理财
+											td 中等
+										tr
+											td.fund-npv-name 天弘永定价值成长
+											td 激进配置混合型
+											td 晨星三年期、五年期四星级基金
+											td 较高风险收益配置
+											td 较高
+										tr
+											td.fund-npv-name 天弘添利LOF
+											td 债券型
+											td 专注债券投资，每个交易日可申请申购赎回
+											td 能灵活变现的稳健理财
+											td 较低
+										tr
+											td.fund-npv-name 天弘稳利定期开放
+											td 债券型
+											td 专注债券投资，每年定期开放
+											td 一年期稳健理财
+											td 较低
+										tr
+											td.fund-npv-name 天弘债券发起式
+											td 债券型
+											td 首只发起式债券基金，天弘自有资金认购
+											td 能灵活变现的稳健理财
+											td 较低
+										tr
+											td.fund-npv-name 天弘永利债券
+											td 债券型
+											td 符合条件，每季度可分红一次，成立至今分红23次
+											td 能灵活变现的稳健理财
+											td 较低
+										tr
+											td.fund-npv-name 行健中国互认
+											td 香港股票型基金
+											td 首个香港互认股票基金，人民币申购
+											td 配置香港股票资产
+											td 较高
+						// Representative public offering products end
+						// The representative special products  start
+						.row.margin-clear.padding-top-60
+							.col-md-12.fund-history-bonus
+								h5.font22.text-center.margin-bottom-60 代表性专户产品
+								table.table.table-striped
+									thead
+										tr
+											th 产品名称
+											th 风险收益特征
+											th 特点
+											th 封闭期
+									tbody
+										tr
+											td FOF专户
+											td 中等
+											td 顺应市场趋势变化，灵活配置各类资产，谋求控险增值
+											td 至少1年
+										tr
+											td 债券专户
+											td 较低
+											td 主要投资固定收益类资产，谋求风险与收益的优化平衡，及资产稳健增值
+											td 至少1年
+										tr
+											td 策略保本专户
+											td 中等偏低
+											td 一站式资产配置，力争在严格量化控险基础上，打开稳定收益空间
+											td 至少1.5年
+										tr
+											td 绝对回报专户
+											td 中等
+											td 运用基于市场或个股的动态交易策略，在市场波动和失衡中谋求正收益
+											td 至少3个月或1年
+										tr
+											td 定增专户
+											td 较高
+											td 择时精选个股标的，以基本面为核心分析择价，分散投资，谋求超额收益
+											td 至少1.5年
+				#htab3.tab-pane.fade.announcement
+					.container.padding-clear.min-height-700
+						.row.margin-clear.white-bg
+							.col-md-12.padding-clear.tab-img-box
+								.col-md-6.padding-clear
+									.padding-clear.box-shadow-clear
+										.tab-img-container
+											img(src='/public/images/bank/web-service-img.png', tppabs='http://www.thfund.com.cn//public/images/bank/web-service-img.png', alt='')
+								.col-md-6.padding-clear.margin-top-15
+									.box-intro.box-style-1.box-text-center.padding-clear.box-shadow-clear.padding-left-15.object-non-visible.animated.object-visible.fadeInRight(data-animation-effect='fadeInRight', data-effect-delay='200')
+										div
+											h5.font22.text-left.margin-bottom-15.margin-bottom-15 最具互联网精神的资产管理公司
+											.font14.margin-todiv-5.margin-bottom-15.text-left 依托大数据研究应用、云计算等先进的技术手段及雄厚的运维资源，运用互联网思维重塑银基合作，打造全面互联网化的新型业务模式。
+											.font14.text-left • 大数据综合咨询服务
+											.font14.text-left •数据研究+人工智能投研支持与风险管理
+											.font14.text-left • 运维合作服务
+						.row.margin-clear.padding-top-40
+							.col-md-12
+								h5.font22
+									i.font-color-d23337.font22.padding-right-25 •
+									| 大数据综合咨询服务
+								p.font14.padding-left-40
+									| 打造业内首个大数据中心，拥有百亿级以上的数据处理能力，为银行客户提供智慧金融服务。个性化量身定制，通过大数据解决方案的规划设计，在互联网金融应用中掌握主动、智能决策。
+						.row.margin-clear
+							.col-md-12
+								h5.font22
+									i.font-color-d23337.font22.padding-right-25 •
+									| 数据研究+人工智能投研及风险管理服务
+								p.font14.padding-left-40
+									| 运用互联网+人工智能改造信息获取方式，利用更广泛的数据源，更直接、更深度地渗透到各行业大数据体系，全面提升公司的投研水平及风险管理服务，颠覆性地改变资管行业的投研模式，成为资管行业拥抱互联网技术的革命性创新。
+						.row.margin-clear
+							.col-md-12
+								h5.font22
+									i.font-color-d23337.font22.padding-right-25 •
+									| 运维合作服务
+								p.font14.padding-left-40 研发行业第一个基于云计算的去IOE大型结算系统，借助先进的阿里云计算平台，运用互联网技术和理念保证金融数据的安全流动，并可极大提高业务处理效率和数据容量。
+

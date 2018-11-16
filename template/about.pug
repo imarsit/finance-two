@@ -1,0 +1,487 @@
+extends layout
+
+block content
+	#skip-link
+		//- a.element-invisible.element-focusable(href='#main-content') 跳转到主要内容
+	.scrollToTop
+		i.icon-up-open-big
+	.page-wrapper
+		.scrollToTop
+			i.icon-up-open-big
+		include lib/header
+		//副导航
+		.page-wrapper
+			.page-intro
+				.container
+					.row
+						.col-md-12.padding-clear
+							ol.th-subnav
+								li.active
+									a(href='', tppabs='http://www.thfund.com.cn/about/company')
+										| 公司介绍
+								li
+									a(href='', tppabs='http://www.thfund.com.cn/cnotice_list')
+										| 公司公告
+								li
+									a(href='', tppabs='http://www.thfund.com.cn/about/news_list')
+										| 媒体关注
+								li
+									a(href='', tppabs='http://www.thfund.com.cn/notice_list')
+										| 基金公告
+								li
+									a(href='', tppabs='http://www.thfund.com.cn/about/team')  团队风采 
+								li
+									a(href='', tppabs='http://www.thfund.com.cn/about/contact')
+										| 联系我们
+			//banner
+			.banner
+				.slideshow-boxed
+					.container.padding-clear
+						.slider-banner-container
+							.slider-banner-2
+								ul
+									li(data-transition='', data-slotamount='7', data-masterspeed='500', data-title='tree_wealth')
+										a(href='')
+											img(src='/public/images/about/enterprise_introduce_banner.png', alt='tree_wealth_banner', data-bgposition='center top', data-bgfit='', data-bgrepeat='no-repeat')
+										.tp-caption.large.sfl.tp-resizeme.font-red.start(data-x='center', data-y='150', data-speed='600', data-start='100', data-endspeed='600', style="letter-spacing: 0px; z-index: 6; border-color: rgb(0, 0, 0); visibility: visible; line-height: 36px; border-width: 0px; margin: 0px 50px 0px 0px; padding: 0px; font-size: 36px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1); transform-origin: 50% 50% 0px; font-family: 'Microsoft Yahei', Arial, 'Open Sans', sans-serif; left: 488px; top: 150px; transition: none 0s ease 0s;") 了解火星人
+										p(style="margin-top: 0px; margin-right: 50px; margin-bottom: 0px; letter-spacing: 0px; z-index: 6; border-color: rgb(0, 0, 0); visibility: visible; line-height: 24px; border-width: 0px; padding: 0px; font-size: 24px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1); transform-origin: 50% 50% 0px; font-family: 'Microsoft Yahei', Arial, 'Open Sans', sans-serif; left: 380.5px; top: 200px; transition: none 0s ease 0s;")
+											| UNDERSTAND
+											| THE TIANHONG
+			//切换标题
+			section.section
+				.container.padding-clear
+					.row.padding-left-140
+						.main.col-md-6.col-md-offset-3.padding-clear
+							ul#about-ul.nav.nav-tabs.enterprise_introduce_tab(role='tablist')
+								li.active#gyth
+									a(href='', role='tab', data-toggle='tab') 关于火星人
+								li#dsj
+									a(href='', role='tab', data-toggle='tab') 火星人大事记
+								li#tyzx
+									a(href='', role='tab', data-toggle='tab') 投研中心
+								li#dsjzx
+									a(href='', role='tab', data-toggle='tab') 大数据中心
+					.line-1px-dark
+			//内容
+			.tab-content.enterprise_introduce_content#about-tab
+				#guanyutianhong.tab-pane.fade.in.active
+					section.section.clearfix.object-non-visible.padding-clear.padding-top-40.animated.object-visible.fadeInUpSmall(data-animation-effect='fadeInUpSmall', data-effect-delay='700')
+						.container.padding-clear
+							.row.grid-space-20
+								.col-md-12.padding-left-right-90
+									.testimonial.clearfix
+										.testimonial-image
+											img(src='/public/images/about/enterprise_introduce_icon3.1.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/enterprise_introduce/enterprise_introduce_icon3.1.png', alt='规模行业第一', title='规模行业第一')
+											h2.title 专注绝对回报
+										.testimonial-body.pull-right
+											p
+												| 火星人基金管理有限公司成立于2004年11月8日，是经中国证监会批准成立的全国性公募基金管理公司之一。2015年6月末，火星人基金公募资产规模达到6685亿元，含专项专户子公司产品在内，总资管规模9479亿元，均排名行业第一。截至2015年6月30日，火星人基金用户数超过2.2亿人，是国内用户数最多的基金公司。
+												| 公司坚持以“绝对收益”为核心、“稳健理财、值得信赖”为经营理念，致力于成为引领互联网金融浪潮、注重创新、注重为客户创造价值、有社会责任感的新型基金管理公司。通过十余年不懈努力，公司300多位员工在一支由国内人才组成的核心团队带领下锐意进取，不断创新，推出国内首只发起式基金、首只养老基金、首只AB分开募集的分级债基、首只互联网基金，稳步跻身至基金行业第一。
+												| 火星人基金的战略发展方向，一是将互联网精神融入金融创新的实践，真正践行“客户利益至上”的理念，竭尽所能为客户创造便捷贴心的投资体验，追求臻于至善的产品设计，做互联网金融产品的提供者；另一条是以中低风险产品为主，大力发展固定收益业务，坚持做“以绝对收益”为核心的新型基金管理公司。
+												| 火星人基金的价值体系可以概括为“六脉神剑”：1)客户第一：客户是衣食父母；2)团队合作：共享共担，平凡人做非凡事；3)拥抱变化：迎接变化，勇于创新；4)诚信：诚实正直，言行坦荡；5)激情：乐观向上，永不放弃；6)敬业：专业执着，精益求精。
+												| 2013年火星人基金和支付宝联合推出首只互联网基金余额宝，开辟了互联网金融新蓝图。截至2015年6月30日，余额宝规模6134亿元，稳居国内最大单只基金；用户数2.26亿人，1/6的国人皆为宝粉。
+							.line-1px-dark
+							.row.grid-space-20.margin-top-60
+								.col-md-12.padding-left-right-90
+									.testimonial.clearfix
+										.testimonial-image
+											img(src='/public/images/about/enterprise_introduce_icon4.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/enterprise_introduce/enterprise_introduce_icon4.png', alt='规模行业第一', title='规模行业第一')
+											h4.title 稳健理财 值得信赖
+										.testimonial-body.pull-right
+											p
+												| 火星人基金坚持以“稳健理财、值得信赖”为经营理念，崇尚创新、拒绝平庸，将互联网精神融入金融创新的实践，注重为用户创造价值，践行用户第一的理念，竭尽所能创造更便捷贴心的投资体验，追求臻于至善的产品设计，成为最具互联网精神的基金公司。
+							.line-1px-dark
+							.row.grid-space-20.margin-top-60
+								.col-md-12.padding-left-right-90
+									.testimonial.clearfix
+										.testimonial-body
+											p
+												| 火星人基金建立了业内首个大数据中心，拥有百亿级以上的数据处理能力，大数据中心通过分析余额宝现有客户数、申赎数、持有数等数据，了解客户行为和演变趣事，简历模型预测未来申购赎回的资金量。目前模型预测未来三天资金申购赎回量和实际发生额误差在5%之内，帮助基金经理很好地在流动性和收益率之间权衡。通过余额宝数据监控系统以及众多模型训练和数据挖掘，能够精准分析余额宝的各种应用场景，比如招财宝，信用卡还款，花呗，节假日等因素，尤其在应对双十一的流动性管理方面提供重大价值。
+										.testimonial-image.pull-right
+											img(src='/public/images/about/enterprise_introduce_icon5.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/enterprise_introduce/enterprise_introduce_icon5.png', alt='规模行业第一', title='规模行业第一')
+											h4.title 大数据助力投研
+							.line-1px-dark
+							.row.grid-space-20.margin-top-60
+								.col-md-12.padding-left-right-90
+									.testimonial.clearfix
+										.testimonial-image
+											img(src='/public/images/about/enterprise_introduce_icon6.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/enterprise_introduce/enterprise_introduce_icon6.png', alt='规模行业第一', title='规模行业第一')
+											h4.title 玩转余额宝 乐在宝粉圈
+										.testimonial-body.pull-right
+											p
+												| 用心理解客户、真心服务客户，以参与感和互动打造客户生态圈是火星人基金的追求。针对互联网客户的理财习惯，火星人基金推出云客服、宝粉网，提供更好的服务和体验，打造小而美的微生态。作为宝粉生态圈浓墨重彩的一笔，2014年6月13日“宝粉网”于余额宝上线一周年之际对网友开放，成为基金行业首家用户互动社区。上线一年已聚集了逾2000万名宝粉，在此分享交流、玩转理财、众筹实现心愿。
+							.line-1px-dark
+							.row.grid-space-20.margin-top-40
+								.col-md-12.padding-left-right-90
+									.testimonial.clearfix
+										.testimonial-body
+											p
+												| 火星人基金建立了证券行业第一个基于云计算的去IOE大型结算系统——火星人基金云直销系统，借助先进的阿里云计算平台，用互联网的技术和理念保证金融数据的安全流动，让用户对后台技术的负责程度无感，且极大地提高了业务处理效率和数据容量。火星人云直销系统具备支撑亿级用户，一天数亿笔交易的能力，且并发交易每秒能处理数千笔，清算时间不到一小时，即便是在双十一网购狂欢节，支付成功率也高达99.99%以上。
+										.testimonial-image.pull-right
+											img(src='/public/images/about/enterprise_introduce_icon13.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/enterprise_introduce/enterprise_introduce_icon13.png', alt='规模行业第一', title='规模行业第一')
+											h4.title 云计算支持巨额交易
+							.line-1px-dark
+				#dashiji.tab-pane.fade.in
+					section.section
+						.container
+							.row.grid-space-20
+								.col-md-12
+									.testimonial.clearfix
+										.testimonial-image
+											img.img-circle(src='/public/images/about/enterprise_introduce_icon1.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/enterprise_introduce/enterprise_introduce_icon1.png', alt='规模行业第一', title='规模行业第一')
+										.testimonial-body
+											h2.title 余额宝并非唯一创新 创新脚步从未停歇
+											p
+												| 2010年12月推出首只A/B独立募集的分级债基——火星人添利。
+												br
+												|                                                 2012年7月推出国内首只发起式基金——火星人债券型发起式基金。
+												br
+												|                                                 2012年10月推出国内首只养老理财基金——火星人安康养老基金。
+												br
+												|                                                 2013年6月国内首只互联网基金——火星人增利宝（余额宝）上线支付宝。现已发展为国内规模最大、用户数最多的单只基金。
+												br
+												|                                                 2014年，在互联网精神的带动下，火星人创新了首只机构类宝宝：星计划，并与天津银行合作推出银行卡理财神器：天天宝。
+												br
+												|                                                 另外，2013年1月7日，公司资产管理子公司——北京天地方中资产管理有限公司获批，正式开展直接投资于实业的类信托业务。
+												br
+							.line-1px-dark
+							// 2015 start
+							.timeline.row.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='0')
+								.timeline-item.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+									// 2015 start
+									article.clearfix.blogpost
+										.blogpost-body
+											.post-info
+												span.year 2015
+											.year-title
+												p  淘宝店开张领跑
+								.timeline-item.pull-right.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+									// blogpost start
+									article.clearfix.blogpost
+										.blogpost-body
+											.blogpost-content
+												p
+													| 2015年2月26日，火星人基金公告，公司增资扩股的相关工商变更登记已经完成，注册资本由1.8亿元增至5.143亿元；蚂蚁金服持有火星人基金股权比例为51%，天津信托、内蒙君正、芜湖高新的持股比例分别为16.8%、15.6%和5.6%。此外，员工持股比例合计为11%，首开基金行业员工公开持股之先河。
+
+								.timeline-item.pull-right.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+									// blogpost start
+									article.clearfix.blogpost
+										.blogpost-body
+											.blogpost-content
+												p 2015年年初上线的火星人基金淘宝店，10元也能理财，开启了理财“小白”们理财初体验。
+								.timeline-item.pull-right.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+									// blogpost start
+									article.clearfix.blogpost
+										.blogpost-body
+											.blogpost-content
+												p 2015年1月13日，火星人基金淘宝店上线；专为淘宝店打造的容易宝上线后，火星人淘宝店销量持续领跑基金淘宝店。
+								.row.clear-both.clearfix
+									.timeline-item.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+										// blogpost start
+										article.clearfix.blogpost
+											.blogpost-body
+												.post-info
+													span.year 2014
+												.year-title
+													p  2014 企业宝宝、银行卡智能理财O2O
+								
+									.timeline-item.pull-right.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+										// blogpost start
+										article.clearfix.blogpost
+											.blogpost-body
+												.blogpost-content
+													p 2014年10月28日，天津银行与火星人基金合作推出银行卡智能理财神器“天天宝”。
+														
+									.timeline-item.pull-right.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+										// blogpost start
+										article.clearfix.blogpost
+											.blogpost-body
+												.blogpost-content
+													p 2014年8月5日，火星人基金与九恒星合作的、专注于企业在线理财的“星计划”正式启动。
+									.timeline-item.pull-right.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+										// blogpost start
+										article.clearfix.blogpost
+											.blogpost-body
+												.blogpost-content
+													p 2014年6月13日，基金行业首个互动社区“宝粉网”上线。
+										// blogpost end
+										// timeline item end
+										// timeline item start
+									.timeline-item.pull-right.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+										// blogpost start
+										article.clearfix.blogpost
+											.blogpost-body
+												.blogpost-content
+													p 2014年5月29日，火星人基金增资扩股方案获批，注册资本金增至5.14亿元。浙江阿里巴巴电子商务有限公司向火星人基金出资26230万元，持有51%的股权。
+									.row.clear-both.clearfix
+										// timeline item start
+										.timeline-item.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+											// blogpost start
+											article.clearfix.blogpost
+												.blogpost-body
+													.post-info
+														span.year 2013
+													.year-title
+														p  首只互联网基金余额宝
+										.timeline-item.pull-right.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+											// blogpost start
+											article.clearfix.blogpost
+												.blogpost-body
+													.blogpost-content
+														p 2013年6月13日，火星人增利宝货币市场基金（余额宝）上线支付宝。
+										.timeline-item.pull-right.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+											// blogpost start
+											article.clearfix.blogpost
+												.blogpost-body
+													.blogpost-content
+														p 2013年5月29日，行业内首只互联网基金——火星人增利宝货币市场基金（余额宝）募集成立。
+																					
+										.row.clear-both.clearfix
+											// timeline item start
+											.timeline-item.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+												// blogpost start
+												article.clearfix.blogpost
+													.blogpost-body
+														.post-info
+															span.year 2012
+														.year-title
+															p
+																| 国内首只发起式基金、
+																br
+																|	首只养老主题基金
+																							
+											.timeline-item.pull-right.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+												// blogpost start
+												article.clearfix.blogpost
+													.blogpost-body
+														.blogpost-content
+															p 2012年12月24日，全资子公司北京天地方中资产管理有限公司在北京成立。
+													
+											.timeline-item.pull-right.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+												// blogpost start
+												article.clearfix.blogpost
+													.blogpost-body
+														.blogpost-content
+															p 2012年11月28日，国内首只养老主题基金——火星人安康养老成立。
+																									
+											.timeline-item.pull-right.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+												// blogpost start
+												article.clearfix.blogpost
+													.blogpost-body
+														.blogpost-content
+												
+											.timeline-item.pull-right.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+												// blogpost start
+												article.clearfix.blogpost
+													.blogpost-body
+														.blogpost-content
+															p 2012年5月17日，火星人基金管理有限公司获证监会批准从事特定客户资产管理业务。
+																											
+											.timeline-item.pull-right.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+												// blogpost start
+												article.clearfix.blogpost
+													.blogpost-body
+														.blogpost-content
+															p 2012年3月12日，公司注册资本增加至人民币1.4亿元。
+																													
+										.row.clear-both.clearfix
+											// timeline item start
+											.timeline-item.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+												// blogpost start
+												article.clearfix.blogpost
+													.blogpost-body
+														.post-info
+															span.year 2010
+														.year-title
+															p
+																| 国内首只AB分开
+																br
+																|	募集的分级债基
+																													
+											.timeline-item.pull-right.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+												// blogpost start
+												article.clearfix.blogpost
+													.blogpost-body
+														.blogpost-content
+										
+											.timeline-item.pull-right.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+												// blogpost start
+												article.clearfix.blogpost
+													.blogpost-body
+														.blogpost-content
+															p 2010年7月20日，广州分公司成立。
+										
+											.timeline-item.pull-right.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+												// blogpost start
+												article.clearfix.blogpost
+													.blogpost-body
+														.blogpost-content
+															p 2010年2月20日，上海分公司成立。
+										.row.clear-both.clearfix
+											// timeline item start
+											.timeline-item.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+												// blogpost start
+												article.clearfix.blogpost
+													.blogpost-body
+														.post-info
+															span.year 2005
+														.year-title
+															p  首发基金
+													
+											.timeline-item.pull-right.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+												// blogpost start
+												article.clearfix.blogpost
+													.blogpost-body
+														.blogpost-content
+															p 2005年10月8日，公司第一只基金—— 火星人精选混合型证券投资基金募集成立。
+												
+											.timeline-item.pull-right.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+												// blogpost start
+												article.clearfix.blogpost
+													.blogpost-body
+														.blogpost-content
+															p 2005年4月20日，北京分公司成立。
+																			
+										.row.clear-both.clearfix
+											// timeline item start
+											.timeline-item.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+												// blogpost start
+												article.clearfix.blogpost
+													.blogpost-body
+														.post-info
+															span.year 2004
+														.year-title
+															p  火星人成立
+															
+											.timeline-item.pull-right.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+												// blogpost start
+												article.clearfix.blogpost
+													.blogpost-body
+														.blogpost-content
+															p 2004年11月8日，火星人基金管理有限公司在天津正式成立，注册资本人民币壹亿元。
+																						
+				#touyanzhongxin.tab-pane.fade.in
+					section.section
+						.container
+							.row.grid-space-20.margin-bottom-35
+								.col-md-12
+									.testimonial.clearfix
+										.testimonial-image
+											img.img-circle(src='/public/images/about/enterprise_introduce_icon2.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/enterprise_introduce/enterprise_introduce_icon2.png', alt='规模行业第一', title='规模行业第一')
+										.testimonial-body
+											h2.title 大数据支持股票研究
+											p
+												| 火星人基金首创建立研究大数据平台，用互联网改造信息获取方式，利用更广泛的数据源，更直接、更深层次
+												br
+												|                                                 地渗透到各行业大数据体系，利用自身的数据信息优势和算法模型优势，降低投资风险，帮助用户获得长期稳健
+												br
+												| 收益例如通过海量数据，准确把握各行业的量价数据，分析行业增长真实情况，通过品类传导测算经济实际运行
+												br
+												|                                                 情况，不断领先资本市场对未来趋势做出判断。
+							.line-1px-dark
+							.row.grid-space-20.margin-top-60
+								.col-md-12
+									.testimonial.clearfix
+										.testimonial-image
+											img.img-circle(src='/public/images/about/enterprise_introduce_icon3.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/enterprise_introduce/enterprise_introduce_icon3.png', alt='规模行业第一', title='规模行业第一')
+										.testimonial-body
+											h2.title 固定收益投资风采
+											p
+												| 一、火星人固定收益团队成熟稳定，坚守“稳中求进”的投资理念
+												br
+												|                                                 火星人基金固定收益团队成熟敬业，专业严谨，基金经理从业经验为6年至13年，经历数次市场牛市、熊市转换
+												br
+												|                                                 的巨大波动，在长期投资工作中积累了宝贵的经验。火星人固定收益团队不仅具备丰富的投资经验，而且在基金行
+												br
+												|                                                 业人员流动频繁的情况下始终保持队伍的稳定：固定收益类基金经理平均在火星人工作时间超过4年。稳定的团队有
+												br
+												|                                                 助于传承火星人的投资哲学，研究方法的延续。
+												br
+												|                                                 多年来，火星人固定收益团队坚守“稳中求进”的投资理念，在严格控制风险的前提下，稳健增值，谋求优化的风险收益。
+												br
+												|                                                 二、火星人内部信用研究注重风险把控，借助大数据分析，有独特竞争力
+												br
+												|                                                 火星人将互联网化大数据分析融入内部信用研究，有助于对发债企业的信用做出更前瞻、更全面、更高效的客
+												br
+												|                                                 观评定，形成业内独特的竞争力。相比外部评级机构，火星人内部信用研究奉行审慎稳健的信用债投资理念，独立
+												br
+												|                                                 研究，更加强调定量分析和定性分析相结合，挖掘火星人在股票分析、大数据分析上的优势，综合考虑宏观经济、
+												br
+												|                                                 行业情况以及财务报表等。
+												br
+												|                                                 首先，火星人基金内部信用分析发挥火星人大数据研究的独到优势，集合定性分析、定量分析、股票分析、大数
+												br
+												|                                                 据分析为一体，形成独特的行业竞争优势。
+												br
+												|                                                 其次，火星人内部信用分析，奉行审慎的投资哲学。中国宏观经济转型的波动风险已难以回避，刚性兑付造成
+												br
+												|                                                 市场对信用风险认识不足，不断积聚的信用风险会在宏观经济增速下台阶的过程中逐渐显性化，客观环境要求信
+												br
+												|                                                 用投资投资采取立足长远，审慎稳健的投资理念。
+												br
+												|                                                 再有，火星人内部信用研究，独立于外部评级机构和卖方研究，由分析师、组合投资经理、交易人员组成信用
+												br
+												| 小组，在组内共同讨论基础上，推荐个债、信用债组合、信用策略，用于指导投资。
+												br
+												|                                                 还有，火星人基金内部信用研究独立，外部评级作为参考。从评级历史看，火星人内部信用评级严格程度远超外
+												br
+												| 部评级，火星人对只有通过内部评级的个券才能纳入债券备选池。对于这些进入债券备选池的债券，设专人信用分析师会持续跟踪，在发债企业出现潜在风险事件或更新财务数据时，做到预警。
+				#dashujuzhongxin.tab-pane.fade.in
+					section.section.margin-bottom-130
+						.container
+							.row.grid-space-20.margin-bottom-35
+								.col-md-12
+									.testimonial.clearfix
+										.testimonial-image
+											img.img-circle(src='/public/images/about/bigdata-icon1.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/enterprise_introduce/bigdata-icon1.png', alt='规模行业第一', title='规模行业第一')
+										.testimonial-body
+											h2.title 行业首个大数据中心
+											p
+												| 2013年火星人基金与支付宝联手推出余额宝，2014年火星人基金开创行业首个大数据中心。
+												| 大数据中心围绕客户交易和行为做大数据的挖掘，包括围绕余额宝客户行为展开的流动性管理的大数据分析，以及基于容易宝系列电商产品等客户交易行为的分析，用数据指导运营的思维，协助运营等工作，具体的工作包括产出数据仓库建设，数据清洗、加工与数据融合，数据分析与挖掘，以及数据应用等商业智能等成果。
+							.line-1px-dark
+							.row.grid-space-20.margin-top-60
+								.col-md-12
+									.testimonial.clearfix
+										.testimonial-image
+											img.img-circle(src='/public/images/about/bigdata-icon2.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/enterprise_introduce/bigdata-icon2.png', alt='规模行业第一', title='规模行业第一')
+										.testimonial-body
+											h2.title 大数据中心的运用
+											p
+												| 业务用途很多，宝粉网用户等级，余额宝与容易宝客户的交叉分析，指数误差跟踪，容易宝实时交易监控，FOF模型系统化，余额宝入市意愿指数，基于数据挖掘的客户精准营销分析系统，余额宝大数据报告等等。
+							.line-1px-dark
+							.row.grid-space-20.margin-top-60
+								.col-md-12
+									.testimonial.clearfix
+										.testimonial-image
+											img.img-circle(src='/public/images/about/bigdata-icon3.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/enterprise_introduce/bigdata-icon3.png', alt='规模行业第一', title='规模行业第一')
+										.testimonial-body
+											h2.title
+												| 余额宝数据监控和预测
+												| 为余额宝基金经理提供流动性管理解决方案
+											p
+												| 通过余额宝数据监控系统以及众多模型训练和数据挖掘，能够精准分析余额宝的各种应用场景，比如招财宝，信用卡还款，花呗，节假日等因素，尤其在应对双十一的流动性管理方面提供重大价值。
+							.line-1px-dark
+							.row.grid-space-20.margin-top-60
+								.col-md-12
+									.testimonial.clearfix
+										.testimonial-image
+											img.img-circle(src='/public/images/about/bigdata-icon4.png', tppabs='http://www.thfund.com.cn/sites/all/themes/thfund/images/enterprise_introduce/bigdata-icon4.png', alt='规模行业第一', title='规模行业第一')
+										.testimonial-body
+											h2.title 快速响应业务需求
+											p
+												| 业务BI制度，快速响应业务需求，优化需求管理，以及内部协同的制度，围绕数据组织业务，重点为业务运营和品牌公关提供数据智力支持。
+
+block script
+	script.
+		
+		
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,432 @@
+extends layout
+
+block content
+	#skip-link
+		//- a.element-invisible.element-focusable(href='#main-content') 跳转到主要内容
+	.scrollToTop
+		i.icon-up-open-big
+	.page-wrapper
+		.scrollToTop
+			i.icon-up-open-big
+		include lib/header
+		.page-wrapper
+			.row
+				section.col-md-10
+			.page-intro(style="padding:0")
+				.container
+					.row
+							.col-md-12.padding-clear
+				.banner
+					// slideshow start
+					.slideshow-boxed
+						.container.padding-clear.container-position-set
+							// slider revolution start
+							.slider-banner-container
+								.slider-banner-2
+									ul
+										// slide 1 start
+										li(data-transition='', data-slotamount='7', data-masterspeed='100', data-title='tree_wealth')
+											// main image
+											img(src='/public/images/old/yl-banner.png', tppabs='http://www.thfund.com.cn//public/images/old/yl-banner.png', alt='yl-banner', data-bgposition='center top', data-bgfit='', data-bgrepeat='no-repeat')
+											.tp-caption.large.sfl.tp-resizeme(data-x='615', data-y='40', data-speed='600', data-start='100', style="z-index: 6; white-space: nowrap; border-color: rgb(0, 0, 0); visibility: inherit; transition: none; line-height: 36px; font-weight:500;border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 36px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;font-family: 'Microsoft Yahei','Arial','Open Sans', sans-serif;", data-endspeed='600')
+												| 天弘养老金理财
+												br
+											.tp-caption.large.sfl.tp-resizeme(data-x='615', data-y='84', data-speed='600', data-start='100', style="z-index: 6; white-space: nowrap; color:#00b7ee;border-color: rgb(0, 0, 0); visibility: inherit; transition: none; line-height: 18px; font-weight:500;border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 18px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;font-family: 'Microsoft Yahei','Arial','Open Sans', sans-serif;", data-endspeed='600')
+												| 利用互联网来解决我国养老金体系存在的痛点
+										// slide 1 end
+										// slider revolution end
+										.banner-text-box.object-non-visible(data-animation-effect='fadeInLeftSmall', data-effect-delay='200')
+											.banner-text-content
+												p
+													| 养老金业务是天弘基金的战略业务之一，公司一直积极应用互联网思维和技术，发挥投资、产品、运营、客服等方面的优势，积极践行创新精神，深度参与国家、企业、个人养老金市场，力争成为拥有一流养老金品牌影响力的养老金管理机构。
+												p
+													| 作为国内最具互联网基因的创新型基金公司，天弘基金一直在进行实践探索，利用互联网来解决我国养老金体系存在的痛点，通过互联网思维、技术的创新，为大众提供更好的体验。从产品选择、客户服务等多个方面，天弘基金已经做好了接受基本养老保险、全国社会保障基金、企业年金、职业年金的资金委托、个人账户产品开发运营的准备。
+												p
+													| 在创新型养老业务的探索方面，天弘基金一直以来都走在行业前列。2012年10月，天弘基金推出了业内首只养老型基金——天弘安康养老混合型证券投资基金。2015年5月，天弘基金第二只专为个人养老理财需求量身打造的养老混合型基金——天弘普惠养老保本混合型证券投资基金正式成立。2015年6月，天弘基金与中国老龄事业发展基金会、工商银行、上海德浓科技共同推出国内第一个消费养老金合格计划“小确幸”。
+				section.section-old.clearfix.padding-top-60.padding-bottom-0.margin-bottom-60.object-non-visible(data-animation-effect='fadeIn', data-effect-delay='0')
+					.container.padding-clear
+						.row.margin-clear
+							.col-md-12.padding-clear
+								h2.text-center.margin-bottom-0.object-non-visible(data-animation-effect='fadeIn', data-effect-delay='0') 为何选择天弘
+								// <div class="separator-2"></div>
+								.owl-carousel.carousel.carousel-page-box
+									.image-box.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='100')
+										.overlay-container
+											img(src='/public/images/old/yl-seclect-icon1.png', tppabs='http://www.thfund.com.cn//public/images/old/yl-seclect-icon1.png', alt='')
+											.image-box-body
+												p 养老金投资能力
+											.overlay
+												.overlay-links
+													p.font12
+														| 具有先进养老金管理理念、丰富养老金管理经验的核心投资团队。国内首只养老主题公募基金——安康养老业绩表现稳健，成立以来年化收益超过13%，成为名副其实的养老投资产品。
+									.image-box.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+										.overlay-container
+											img(src='/public/images/old/yl-seclect-icon2.png', tppabs='http://www.thfund.com.cn//public/images/old/yl-seclect-icon2.png', alt='')
+											.image-box-body
+												p
+													| 专业的养老金管理团队
+											.overlay
+												.overlay-links
+													p.font12 养老金团队具有丰富服务养老金服务、方案设计经验，满足客户个性化服务需求。通过移动互联网技术提供便捷的养老运营与客户服务。
+									.image-box.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='300')
+										.overlay-container
+											img(src='/public/images/old/yl-seclect-icon3.png', tppabs='http://www.thfund.com.cn//public/images/old/yl-seclect-icon3.png', alt='')
+											.image-box-body
+												p
+													| 养老金产品开发能力
+											.overlay
+												.overlay-links
+													p.font12 可充分利用大数据挖掘优势，分析客户的投资偏好与风险承受水平，以此为依据指引投资者自己选择最适合的产品。
+									.image-box.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='400')
+										.overlay-container
+											img(src='/public/images/old/yl-seclect-icon4.png', tppabs='http://www.thfund.com.cn//public/images/old/yl-seclect-icon4.png', alt='')
+											.image-box-body
+												p
+													| 创新及政策研究支持
+											.overlay
+												.overlay-links
+													p.font12
+														| 专注于国家养老金政策的发展与改革，在基本养老、企业年金、第三支柱养老储蓄等多方面展开论证探讨与课题研究。作为监事长单位，与众多合作机构发起成立了中国养老金融 50 人论坛（CAFF50），力图促进中国养老金融政策整合，推动中国长期资本市场建设，推进普惠养老金融发展，践行改善民生福祉的社会责任。
+			
+				section.section-old.clearfix.padding-clear.margin-bottom-60.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='0')
+					.container.padding-clear
+						.row.margin-clear
+							.col-md-12.padding-clear
+								a(href="javascript:if(confirm('http://www.caff50.net/  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�  \n\n����Ҫ�ӷ�����������?'))window.location='http://www.caff50.net/'", tppabs='http://www.caff50.net/', target='_blank')
+									img(src='/public/images/old/yl-center-banner.png', tppabs='http://www.thfund.com.cn//public/images/old/yl-center-banner.png', alt='')
+				section.section-old.clearfix.padding-clear.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='0')
+					.container.padding-clear
+						.row.margin-clear
+							.col-md-4.annuity-news-box.padding-clear
+							.col-md-4.annuity-news-box.padding-clear
+							.col-md-4.annuity-news-box.padding-clear
+		
+				section.bg-color-8fc31f.section-old.margin-top-60.padding-top-60.padding-bottom-10.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='0')
+					.container.margin-bottom-60
+						.row.margin-clear
+							.col-md-12
+								.row.grid-space-10.margin-bottom-25
+									.col-md-12.padding-clear.text-center
+										h2.section-old-especial-title 我们的业务方向
+								.col-md-6
+									.row
+										.col-md-12.padding-clear.padding-bottom-30
+											.box-style-6.object-non-visible.animated.object-visible.fadeInUpSmall(data-animation-effect='fadeInUpSmall', data-effect-delay='0')
+												.icon-container
+													img(src='/public/images/old/ly-service-icon1.png', tppabs='http://www.thfund.com.cn//public/images/old/ly-service-icon1.png', alt='')
+												.body
+													span 基本养老保险基金
+													p.font12
+														| 基本养老保险基金，包括企业职工、机关事业单位工作人员和
+														br
+														| 城乡居民养老基金。
+									.row
+										.col-md-12.padding-clear.padding-bottom-30
+											.box-style-6.object-non-visible.animated.object-visible.fadeInUpSmall(data-animation-effect='fadeInUpSmall', data-effect-delay='600')
+												.icon-container
+													img(src='/public/images/old/ly-service-icon3.png', tppabs='http://www.thfund.com.cn//public/images/old/ly-service-icon3.png', alt='')
+												.body
+													span 全国社保基金
+													p.font12
+														| 全国社会保障基金是国家社会保障储备基金，由中央财政预算
+														br
+														| 拨款、国有资本划转、基金投资收益和国务院批准的其他方式
+														br
+														| 筹集的资金构成，专门用于人口老龄化高峰时期的养老保险等
+														br
+														| 社会保障支出的补充、调剂，由全国社会保障基金理事会负责
+														br
+														| 管理运营。
+									.row
+										.col-md-12.padding-clear.padding-bottom-30
+											.box-style-6.object-non-visible.animated.object-visible.fadeInUpSmall(data-animation-effect='fadeInUpSmall', data-effect-delay='600')
+												.icon-container
+													img(src='/public/images/old/ly-service-icon5.png', tppabs='http://www.thfund.com.cn//public/images/old/ly-service-icon5.png', alt='')
+												.body
+													span 个人账户产品
+													p.font12
+														| 个人退休账户是一种个人自愿投资性退休账户，从国外经验来
+														br
+														| 看，个人退休账户主要优势在于享有税收延递或免税等多种税
+														br
+														| 收优惠政策，以及拥有个人投资选择权，账户所有人可以根据
+														br
+														| 自身的风险收益喜好，自主、灵活地配置资产。天弘基金希望
+														br
+														| 可以通过个人养老金产品开发能力、海量客户服务能力、互联
+														br
+														| 网平台、大数据投研技术等为客户提供个人养老储蓄方面的服
+														br
+														| 务，造福民生福祉。
+								.col-md-6
+									.row
+										.col-md-12.padding-clear.padding-bottom-30
+											.box-style-6.object-non-visible.animated.object-visible.fadeInUpSmall(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+												.icon-container
+													img(src='/public/images/old/ly-service-icon2.png', tppabs='http://www.thfund.com.cn//public/images/old/ly-service-icon2.png', alt='')
+												.body
+													span 企业年金
+													p.font12
+														| 企业年金，是指企业及其职工在依法参加基本养老保险的基础
+														br
+														| 上，自愿建立的补充养老保险制度。
+									.row
+										.col-md-12.padding-clear.padding-bottom-30
+											.box-style-6.object-non-visible.animated.object-visible.fadeInUpSmall(data-animation-effect='fadeInUpSmall', data-effect-delay='800')
+												.icon-container
+													img(src='/public/images/old/ly-service-icon4.png', tppabs='http://www.thfund.com.cn//public/images/old/ly-service-icon4.png', alt='')
+												.body
+													span 养老金产品
+													p.font12
+														| 养老金产品是由企业年金基金投资管理人发行的、面向企业年
+														br
+														| 金基金定向销售的企业年金基金标准投资组合。根据投资范围
+														br
+														| 不同，可分为股票型、混合型、固定收益型及货币型养老金产
+														br
+														| 品。
+									.row
+										.col-md-12.padding-clear.padding-bottom-30
+											.box-style-6.object-non-visible.animated.object-visible.fadeInUpSmall(data-animation-effect='fadeInUpSmall', data-effect-delay='1000')
+												.icon-container
+													img(src='/public/images/old/ly-service-icon6.png', tppabs='http://www.thfund.com.cn//public/images/old/ly-service-icon6.png', alt='')
+												.body
+													span 养老金合作产品
+													p.font12
+														| 通过与外部养老金管理机构共同开发管理包括养老保障产品等
+														br
+														| 合作产品，为委托人量身打造适合的理财方案，从而更有效率的
+														br
+														| 管理养老资金。
+									.row
+										.col-md-12.padding-clear.padding-bottom-30
+											.box-style-6.object-non-visible.animated.object-visible.fadeInUpSmall(data-animation-effect='fadeInUpSmall', data-effect-delay='1000')
+												.icon-container
+													img(src='/public/images/old/ly-service-icon7.png', tppabs='http://www.thfund.com.cn//public/images/old/ly-service-icon7.png', alt='')
+												.body
+													span 职业年金
+													p.font12
+														| 职业年金是指机关事业单位及其工作人员在参加机关事业单位
+														br
+														| 基本养老保险的基础上，建立的补充养老保险制度。
+		
+				section#old-section.section-old.clearfix.padding-clear.margin-top-60.margin-bottom-60.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='0')
+							// center-banner start
+							.container.padding-clear
+								.row.margin-clear
+									.col-md-12.padding-clear
+										h2.text-center.margin-bottom-40 特色产品
+										.col-md-6.padding-clear
+											img(src='/public/images/old/yl-product-img1.png', tppabs='http://www.thfund.com.cn//public/images/old/yl-product-img1.png', alt='退休之后,因为理财更自在.退休后的悠闲生活，因为理财，而倍感轻松和愉悦。')
+										.col-md-6.padding-clear
+											.pull-right
+												img(src='/public/images/old/yl-product-img2.png', tppabs='http://www.thfund.com.cn//public/images/old/yl-product-img2.png', alt='退休之后,因为理财更自在,退休后的悠闲生活，因为理财，而倍感轻松和愉悦')
+							// center-banner end
+							// Product features end
+							// Common questions and answers start
+				section.section-old.clearfix.object-non-visible.padding-clear.padding-top-20(data-animation-effect='fadeInUpSmall', data-effect-delay='0')
+					.container.padding-clear.border-top-1px
+						h2.margin-top-60.margin-bottom-30.text-center 常见问答 F&Q
+					.container.padding-clear
+						.row.margin-clear
+							.col-md-12.padding-clear.old-age-qa
+								.row.margin-clear
+									.col-md-6.padding-clear
+										.padding-right-30.margin-right-30
+											.col-md-12.padding-clear
+												.box-style-2.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='0')
+													.body
+														h5.font-color-393f48
+															i.fa.fa-stop.list-title-square
+															| 养老金的覆盖范围有哪些？
+														p.font12.font-color-393f48.line-height-28
+															| 广义上的养老金包括全国社会保障基金、基本养老保险基金、企业年金和职业年金，以及个人用于养老的储 备资金。
+															br
+											.col-md-12.padding-clear
+												.box-style-2.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='100')
+													.body
+														h5.font-color-393f48
+															i.fa.fa-stop.list-title-square
+															| 养老金投资的原则是什么？
+														p.font12.font-color-393f48.line-height-28
+															| （1）要实行分散投资，要进行不同资产类别的组合，而且要根据不同的性质养老资金安全性的要求和风险承受能力进行不同比例资产的配置。
+															br
+															|                                                 （2）进行专业化投资。养老金的管理必须实现专业化，要经过市场化的遴选机制选择专业的机构投资者，透明度高，运作规范，为养老金的安全运营和保值增值提供比较好的保障。
+															br
+															|                                                 （3）坚持长期投资的原则，国际上的养老金作为机构投资者一般会秉承长期投资，价值投资的理念，投资周期往往达到十年，甚至三十年，使得最终能和社会经济发展的回报相适应。
+															br
+											.col-md-12.padding-clear
+												.box-style-2.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+													.body
+														h5.font-color-393f48
+															i.fa.fa-stop.list-title-square
+															| 全国社会保障资金的投资范围包括哪些？
+														p.font12.font-color-393f48.line-height-28
+															| 全国社会保障资金的投资范围包括银行存款、国债和其他具有良好流动性的金融工具，包括上市流通的证券投资基金、股票、企业债、金融债、地方政府债等，同时也允许基金投资于信托贷款、全国银行间一级市场同业存单等。
+															br
+															|                                                 全国社保理事会也可直接投资于中央企业及其子公司，以及地方具有核心竞争力的行业龙头企业包括优质民营企业。
+															br
+															|                                                 全国社保基金将加大对保障性住房、城市基础设施等项目的参与力度。
+															br
+											.col-md-12.padding-clear
+												.box-style-2.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='300')
+													.body
+														h5.font-color-393f48
+															i.fa.fa-stop.list-title-square
+															| 企业年金的投资范围是什么？
+														p.font12.font-color-393f48.line-height-28
+															| 银行活期存款、中央银行票据、一年期以内(含一年)的银行定期存款、债券回购、货币市场基金、货币型养老金产品等流动性资产；一年期以上的银行定期存款、协议存款、国债、金融债、企业（公司）债、可转换债（含分离交易可转换债）、短期融资券、中期票据、万能保险产品、商业银行理财产品、信托产品、基础设施债权投资计划、特定资产管理计划、债券基金、投资连结保险产品（股票投资比例不高于30%）、固定收益型养老金产品、混合型养老金产品等固定收益类资产；股票、股票基金、混合基金、投资连结保险产品（股票投资比例高于30%）、股票型养老金产品等权益类资产。
+											.col-md-12.padding-clear
+												.box-style-2.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='400')
+													.body
+														h5.font-color-393f48
+															i.fa.fa-stop.list-title-square
+															| 基本养老保险基金的投资范围是怎样规定的？
+														p.font12.font-color-393f48.line-height-28
+															| 投资范围包括：银行存款，中央银行票据，同业存单；国债，政策性、开发性银行债券，信用等级在投资级以上的金融债、企业（公司）债、地方政府债券、可转换债（含分离交易可转换债）、短期融资券、中期票据、资产支持证券，债券回购；养老金产品，上市流通的证券投资基金，股票，股权，股指期货，国债期货。
+															br
+															|                                                 国家重大工程和重大项目建设，养老基金可以通过适当方式参与投资。
+															br
+															|                                                 国有重点企业改制、上市，养老基金可以进行股权投资。
+											.col-md-12.padding-clear
+												.box-style-2.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='500')
+													.body
+														h5.font-color-393f48
+															i.fa.fa-stop.list-title-square
+															| 企业年金与基本养老保险的主要区别是什么？
+														p.font12.font-color-393f48.line-height-28
+															| （1）基本养老保险是强制性的，企业及职工无权决定是否参加、缴费金额和领取方式.
+															br
+															|                                                 （2）企业年金是在企业及其职工自主、自愿前提下建立的，职工和企业双方必须达成合意，才能决定是否建立企业年金。
+											.col-md-12.padding-clear
+												.box-style-2.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='600')
+													.body
+														h5.font-color-393f48
+															i.fa.fa-stop.list-title-square
+															| 基本养老保险基金和全国社保基金主要区别是什么？
+														p.font12.font-color-393f48.line-height-28
+															| 全国社会保障基金于2000年8月设立，是国家社会保障储备基金，由中央财政预算拨款、国有资本划转、基金投资收益和国务院批准的其他方式筹集的资金构成，专门用于人口老龄化高峰时期的养老保险等社会保障支出的补充、调剂。
+															br
+															|                                                 全国社会保障基金与地方政府管理的基本养老、基本医疗等社会保险基金是不同的基金，资金来源和运营管理不同，用途也存在区别。社会保险基金包括基本养老保险基金、基本医疗保险基金、工伤保险基金、失业保险基金和生育保险基金。
+											.col-md-12.padding-clear
+												.box-style-2.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='700')
+													.body
+														h5.font-color-393f48
+															i.fa.fa-stop.list-title-square
+															| 全国社保基金、基本养老保险基金以及企业年金的在投资范围以及权益类投资方面有什么主要区别？
+														p.font12.font-color-393f48.line-height-28
+															| （1）全国社保基金可以参与境内与境外的投资。而基本养老保险基金与企业年金只能参与境内投资。
+															br
+															|                                                 （2）三类资金都可以投资于权益类资产，社保基金权益类资产投资比例上限为40%，而基本养老保险基金及企业年金的权益类资产投资比例上限为30%。
+									.col-md-6.padding-right-0.padding-left-30
+										div
+											.col-md-12.padding-clear
+												.box-style-2.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='100')
+													.body
+														h5.font-color-393f48
+															i.fa.fa-stop.list-title-square
+															| 建立企业年金对个人的好处有哪些？
+														p.font12.font-color-393f48.line-height-28
+															| 对个人而言，主要体现在以下几个方面：
+															br
+															|                                                 （1）参与企业年金计划，可以增加退休后的收入水平，有利于增强化解老年经济风险的能力。
+															br
+															|                                                 （2）参加企业年金计划，是员工行使自身民主权利的一种表现。企业年金方案必须经过职工代表大会的讨论通过，让每个员工都了解企业年金方案的详细内容；企业年金的管理充分体现了透明化，每位员工都可以通过企业年金基金管理机构提交的报告、通过电话、网上查询等方式，随时了解企业及员工企业年金缴费的情况、投资收益的情况及个人账户资金积累的情况等，企业年金的信托管理模式，使企业年金的管理完全透明化，使员工的利益得到切实的保障。
+															br
+															|                                                 （3）参加企业年金可以享受国家给予的税收优惠政策。
+											.col-md-12.padding-clear
+												.box-style-2.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='200')
+													.body
+														h5.font-color-393f48
+															i.fa.fa-stop.list-title-square
+															| 建立企业年金对企业有哪些好处？
+														p.font12.font-color-393f48.line-height-28
+															| 对于企业来讲主要有四方面的好处：
+															br
+															|                                                 （1）建立企业年金计划是优化人力资源管理，实施人才战略的一个重要手段。企业年金弥补了传统员工福利保障制度当期激励的不足，有利于形成对员工的长效激励机制，稳定员工队伍、吸引优秀人才，增强企业的凝聚力和竞争力。
+															br
+															|                                                 （2）企业年金的受托经营机构通过各种方式的资金运作，实现企业年金的保值、增值，从而为长期确保企业离退休人员的生活水平提供物质基础，可以妥善解决员工退休后的生活保障问题。
+															br
+															|                                                 （3）可以享受国家对于企业年金制度给予的政策优惠，利用年金税收优惠降低企业税收成本。企业缴费在职工工资总额5%以内的部分可从成本中列支，免交所得税。
+															br
+															|                                                 （4）可以帮助企业树立品牌，提高企业社会形象。企业年金不仅是国家政策导向积极倡导的发展方向，同时还体现了企业对员工退休生活的关注和长远考虑，显示了企业的社会责任感，更是企业以人为本管理理念的具体表现。企业先行建立企业年金，必将受到社会的广泛关注，对树立企业品牌，提高企业的社会形象起到积极的作用。
+											.col-md-12.padding-clear
+												.box-style-2.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='300')
+													.body
+														h5.font-color-393f48
+															i.fa.fa-stop.list-title-square
+															| 企业年金中的养老金产品与个人的养老金理财有什么区别？
+														p.font12.font-color-393f48.line-height-28
+															| （养老金产品是由企业年金基金投资管理人发行的、面向企业年金基金定向销售的企业年金基金标准投资组合。目前，基金公司的养老金产品业务只向企业年金团体客户提供，不支持个人直接购买。
+															br
+															|                                                 个人客户如果想参与养老金理财，可以通过购买类似“安康养老”这样的养老型理财基金产品，或养老保险公司发行的个人养老保障产品等等。
+															br
+											.col-md-12.padding-clear
+												.box-style-2.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='400')
+													.body
+														h5.font-color-393f48
+															i.fa.fa-stop.list-title-square
+															| 国家已经建立了基本养老保险制度，为什么还需要个人购买商业养老保险产品或进行个人养老基金理财？
+														p.font12.font-color-393f48.line-height-28
+															| 中国的养老保险体系有三大支柱：第一支柱是政府“兜底”的基础养老保险，第二支柱是企业年金、职业年金，第三支柱是个人商业养老保险保障。目前第一支柱的缴费率已达28%，远超10%的国际水平，但平均替代率（退休金/退休前工资）则从77%持续下滑到45%左右。因此，加大第二、第三支柱的保障贡献是大势所趋。目前从全国范围来看，职业年金和企业年金的覆盖面都比较小，而第三支柱的进入门槛比较低，只要拿出一定比例的资金就可以建立个人退休账户。
+											.col-md-12.padding-clear
+												.box-style-2.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='500')
+													.body
+														h5.font-color-393f48
+															i.fa.fa-stop.list-title-square
+															|                                                     安康养老是一款什么样的产品？
+														p.font12.font-color-393f48.line-height-28
+															| 天弘安康养老基金是一只为各类养老资金进行养老理财而专门设计的稳健型长期养老理财基金产品。基于养老资金兼顾安全与适度收益的理财目标，天弘安康养老基金的投资以债券等固定收益类资产为主，并将不高于30%的资产进行股票等权益类资产投资，力求在追求安全性的基础上，获取适度的长期稳健收益。适合个人直接购买，也适合从事养老金资产管理的机构投资者进行配置。
+											.col-md-12.padding-clear
+												.box-style-2.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='600')
+													.body
+														h5.font-color-393f48
+															i.fa.fa-stop.list-title-square
+															|                                                     安康养老为什么适合进行养老理财？
+														p.font12.font-color-393f48.line-height-28
+															| 养老资金是为未来的养老计划而积累的资金，安全性是首要目标，同时，为抵御货币贬值，提升长期养老能力，养老资金亟需通过理财投资获取适度收益。天弘安康养老基金总结借鉴了全国社保基金、企业年金等养老资金投资管理规定及相关研究成果，通过债券等固定收益类资产的投资为主，并将不高于30%的资产进行股票等权益类资产投资，力求在追求安全性的基础上，获取适度的长期稳健收益，以满足养老资金兼顾安全与适度收益的理财目标。
+					.space
+					.space
+				// Common questions and answers end
+				// contact us start
+				section.section-old.bg-color-bfbfbf.padding-bottom-40.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='0')
+					.container
+						.row
+							.main.col-md-12.padding-clear
+								h1.page-title.text-center.margin-top-60.margin-bottom-50 联系我们
+								// page-title end
+								.contact-form
+									form#webform-client-form-3767.webform-client-form.webform-client-form-3767(enctype='multipart/form-data', action='http://www.thfund.com.cn/age_pension', method='post', accept-charset='UTF-8')
+										div
+											.col-md-5.col-md-offset-1.webform-layout-box.vert.webform-component--layout
+												.form-item.webform-component.webform-component-textfield.webform-component--layout--name.form-group
+													label.control-label.element-invisible(for='edit-submitted-layout-name')
+														| 姓名 
+														span.form-required(title='此字段为必选项。') *
+													input#edit-submitted-layout-name.form-group.form-control.form-text.required(required='required', placeholder='姓名', type='text', name='submitted[layout][name]', value='', size='60', maxlength='128')
+												.form-item.webform-component.webform-component-textfield.webform-component--layout--company.form-group
+													label.control-label.element-invisible(for='edit-submitted-layout-company') 公司 
+													input#edit-submitted-layout-company.form-group.form-control.form-text(placeholder='单位', type='text', name='submitted[layout][company]', value='', size='60', maxlength='128')
+												.form-item.webform-component.webform-component-textfield.webform-component--layout--email.form-group
+													label.control-label.element-invisible(for='edit-submitted-layout-email')
+														| 邮箱 
+														span.form-required(title='此字段为必选项。') *
+													input#edit-submitted-layout-email.form-group.form-control.form-text.required(required='required', placeholder='邮箱', title='邮件', data-toggle='tooltip', type='text', name='submitted[layout][email]', value='', size='60', maxlength='128')
+												.form-item.webform-component.webform-component-textfield.webform-component--layout--phone.form-group
+													label.control-label.element-invisible(for='edit-submitted-layout-phone') 电话 
+													input#edit-submitted-layout-phone.form-group.form-control.form-text(placeholder='电话', type='text', name='submitted[layout][phone]', value='', size='60', maxlength='128')
+											.col-md-5.form-item.webform-component.webform-component-textarea.webform-component--feedback.form-group
+												label.control-label.element-invisible(for='edit-submitted-feedback')
+													| 反馈意见 
+													span.form-required(title='此字段为必选项。') *
+												.form-textarea-wrapper
+													textarea#edit-submitted-feedback.form-group.form-control.form-textarea.required(required='required', placeholder='咨询意见', name='submitted[feedback]', cols='60', rows='5')
+											input(type='hidden', name='details[sid]')
+											input(type='hidden', name='details[page_num]', value='1')
+											input(type='hidden', name='details[page_count]', value='1')
+											input(type='hidden', name='details[finished]', value='0')
+											input(type='hidden', name='form_build_id', value='form-32JKWLWeFnutg5WkRVRlc7sY-Qs8FHmH8RRqe88-LMA')
+											input(type='hidden', name='form_id', value='webform_client_form_3767')
+											.form-actions
+												button.webform-submit.button-primary.btn.btn-primary.form-submit(type='submit', name='op', value='发送') 发送
+				// contact us end

@@ -1,0 +1,196 @@
+
+extends layout
+
+block content
+	#skip-link
+		//- a.element-invisible.element-focusable(href='#main-content') 跳转到主要内容
+	.scrollToTop
+		i.icon-up-open-big
+	.page-wrapper
+		.scrollToTop
+			i.icon-up-open-big
+		include lib/header
+		.page-intro
+			.container
+				.row
+					.col-md-12.padding-clear
+						ol.th-subnav
+							li.active
+								a(href='inst_sell.htm')  机构直销 
+							// <li class=""><a href="/inst_annuity">  企业年金</a></li>
+							li
+								a(href='inst_sma.htm')  机构专户／专项 
+		// page-intro end
+		.row
+			// page-intro end
+			section.col-md-10
+		// banner start
+		#loginbox.banner
+			// slideshow start
+			.slideshow-boxed
+				// <div class="container padding-clear">
+				// slider revolution start
+				.slider-banner-container
+					.slider-banner-2
+						ul
+							// slide 1 start
+							li(data-transition='', data-slotamount='7', data-masterspeed='100', data-title='tree_wealth')
+								// main image
+								img(src='/public/images/inst_sell/enterprise_direct_selling_banner.png', alt='tree_wealth_banner', data-bgposition='center top', data-bgfit='cover', data-bgrepeat='no-repeat')
+								.tp-caption.tplargeslidertitle.sfl.tp-resizeme.font-white(data-x='75', data-y='105', data-speed='600', data-start='300', style="z-index: 6; white-space: nowrap; color: rgb(255, 255, 255); border-color: rgb(0, 0, 0); visibility: inherit; transition: none; line-height: 36px;  height: 36px; font-weight:bold;border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 36px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;font-family: 'Microsoft Yahei','Arial','Open Sans', sans-serif;", data-endspeed='600')
+									| 稳健理财  值得信赖
+								.tp-caption.sfl.tp-resizeme.font-white(data-x='75', data-y='145', data-speed='600', data-start='500', style="font-size:20px;font-weight:500;font-family: 'Microsoft Yahei','Arial','Open Sans', sans-serif; line-height: 36px; height: 36px;", data-endspeed='600')
+									| 企业开户 简单 便捷 高效
+
+		section.section.padding-bottom-0.object-non-visible(data-animation-effect='fadeInUpSmall', data-effect-delay='0')
+			.container.padding-clear
+				.row
+					// main start
+					// ================
+					.main.col-md-4.col-md-offset-4
+						// tabs start
+						// Nav tabs
+						ul.nav.nav-tabs.direct_selling_tab(role='tablist')
+							li.active
+								a.a(href='#kaihuliucheng', role='tab', data-toggle='tab') 企业理财开户流程
+							li
+								a.a(href='#licaifuwuliucheng', role='tab', data-toggle='tab') 企业理财业务流程
+						// Tab panes
+				.row#inst-row
+					.tab-content.margin-bottom-0#inst-tab
+						#kaihuliucheng.tab-pane.fade.in.active
+							.row
+								.col-md-10.col-md-offset-1.padding-left-80.kaihuliucheng-box
+									.col-md-3
+										.box-intro.box-style-1.box-text-center.object-non-visible.padding-clear.animated.object-visible.fadeInLeft.box-shadow-clear.text-center(data-animation-effect='fadeInLeft', data-effect-delay='300')
+											.intro-container
+												img(src='/public/images/inst_sell/enterprise_direct_selling_icon4.png', tppabs='http://www.thfund.com.cn//public/images/inst_sell/enterprise_direct_selling_icon4.png', alt='')
+											h5.h5 1.准备资料
+											p.margin-clear.font12.font-color-a4aeb9.padding-bottom-10
+												a.font-color-abb4be.font12(href='qa_list-pc=17&sc=54.htm', tppabs='http://www.thfund.com.cn/qa_list?pc=17&sc=54') 查看一般机构开户资料>
+									.col-md-1.jiantou
+										.box-intro.box-style-1.object-non-visible.padding-clear.animated.object-visible.fadeInLeft.box-shadow-clear(data-animation-effect='fadeInLeft', data-effect-delay='200')
+											.intro-container
+												img(src='/public/images/inst_sell/enterprise_direct_selling_icon3.png', tppabs='http://www.thfund.com.cn//public/images/inst_sell/enterprise_direct_selling_icon3.png', alt='')
+									.col-md-3.padding-clear
+										.box-intro.box-style-1.box-text-center.object-non-visible.padding-clear.animated.object-visible.fadeInLeft.box-shadow-clear(data-animation-effect='fadeInLeft', data-effect-delay='200')
+											.intro-container
+												img(src='/public/images/inst_sell/enterprise_direct_selling_icon5.png', tppabs='http://www.thfund.com.cn//public/images/inst_sell/enterprise_direct_selling_icon5.png', alt='')
+											h5.h5 2.递交表单
+											p.margin-clear.font12.font-color-a4aeb9.padding-bottom-10
+												| 将开户资料寄送到我司直销中心
+												br
+												|                                     传真办理的客户，需将原件寄至我司
+									.col-md-1.jiantou
+										.box-intro.box-style-1.object-non-visible.padding-clear.animated.object-visible.fadeInLeft.box-shadow-clear(data-animation-effect='fadeInLeft', data-effect-delay='200')
+											.intro-container
+												img(src='/public/images/inst_sell/enterprise_direct_selling_icon3.png', tppabs='http://www.thfund.com.cn//public/images/inst_sell/enterprise_direct_selling_icon3.png', alt='')
+									.col-md-3.padding-clear
+										.box-intro.box-style-1.box-text-center.object-non-visible.padding-clear.animated.object-visible.fadeInLeft.box-shadow-clear(data-animation-effect='fadeInLeft', data-effect-delay='100')
+											.intro-container
+												img(src='/public/images/inst_sell/enterprise_direct_selling_icon6.png', tppabs='http://www.thfund.com.cn//public/images/inst_sell/enterprise_direct_selling_icon6.png', alt='')
+											h5.h5 3.完成开户
+											p.margin-clear.font12.font-color-a4aeb9.padding-bottom-10
+												| 我司会在收到资料的当日内办理开户
+												br
+												|                                     开户当天也能进行交易
+						#licaifuwuliucheng.tab-pane.fade.in
+							.row
+								.col-md-8.col-md-offset-2.licaifuwuliucheng-box
+									.col-md-5
+										.box-intro.box-style-1.box-text-center.object-non-visible.animated.object-visible.padding-clear.fadeInLeft.box-shadow-clear(data-animation-effect='fadeInLeft', data-effect-delay='300')
+											.intro-container
+												img(src='/public/images/inst_sell/enterprise_direct_selling_icon1.png', tppabs='http://www.thfund.com.cn//public/images/inst_sell/enterprise_direct_selling_icon1.png', alt='')
+											h5.h5 1、申购下单
+											p.margin-clear.font12.font-color-a4aeb9.padding-bottom-10
+												| 将填妥且加盖公章的申请表单传真至我司
+												br
+												a.font-color-abb4be.font12(href='qa_list-pc=17&sc=61.htm', tppabs='http://www.thfund.com.cn/qa_list?pc=17&sc=61') 下载申请表单及查看邮寄地址> 
+									.col-md-2.jiantou
+										.box-intro.box-style-1.object-non-visible.padding-clear.animated.object-visible.fadeInLeft.box-shadow-clear(data-animation-effect='fadeInLeft', data-effect-delay='200')
+											.intro-container
+												img(src='/public/images/inst_sell/enterprise_direct_selling_icon3.png', tppabs='http://www.thfund.com.cn//public/images/inst_sell/enterprise_direct_selling_icon3.png', alt='')
+									.col-md-5
+										.box-intro.box-style-1.box-text-center.object-non-visible.animated.object-visible.padding-clear.fadeInLeft.box-shadow-clear(data-animation-effect='fadeInLeft', data-effect-delay='100')
+											.intro-container
+												img(src='/public/images/inst_sell/enterprise_direct_selling_icon2.png', tppabs='http://www.thfund.com.cn//public/images/inst_sell/enterprise_direct_selling_icon2.png', alt='')
+											h5.h5 2.划拨资金
+											p.margin-clear.font12.font-color-a4aeb9.padding-bottom-10
+												| 及时将申购资金汇入直销清算账户
+												br
+												a.font-color-abb4be.font12(href='qa_list-pc=17&sc=61.htm', tppabs='http://www.thfund.com.cn/qa_list?pc=17&sc=61') 查看划拨资金账户>
+				.line-1px-dark
+		section.section.clearfix.object-non-visible.padding-clear.padding-top-60(data-animation-effect='fadeInUpSmall', data-effect-delay='0')
+			.container
+				.row.grid-space-20
+					h3.text-center.section-title 企业理财咨询
+					p.text-center.font18.font-color-abb4be.padding-top-15 天弘企业理财，为中小企业贴身打造，提供方便、易用、安全的理财服务。
+				.row.grid-space-20
+					p.btn.btn-zixun(target='_blank')
+						i.zixun-icon-box
+							img(src='/public/images/inst_sell/zixun-icon.png', tppabs='http://www.thfund.com.cn//public/images/inst_sell/zixun-icon.png')
+						| 电话：400-710-9999
+		// 天弘优势 start
+		section.section.gray-bg.clearfix.object-non-visible.padding-clear.padding-top-20(data-animation-effect='fadeInUpSmall', data-effect-delay='0')
+			.container
+				.row.grid-space-20.advantage-box
+					h3.section-title-margin-40.text-center 天弘优势
+					.col-md-4
+						.box-intro.box-style-1.border-right-white.object-non-visible.animated.object-visible.fadeInLeft.border-right-white(data-animation-effect='fadeInLeft', data-effect-delay='300')
+							.intro-container
+								img(src='/public/images/inst_sell/enterprise_direct_selling_icon7.png', tppabs='http://www.thfund.com.cn//public/images/inst_sell/enterprise_direct_selling_icon7.png', alt='')
+							h5.h5 贴心的线下全流程服务
+							p.margin-clear.font12.font-color-a4aeb9.padding-bottom-10
+								| 线下全方位服务体验,
+								br
+								| 轻松搞定开户、申购、赎回、查询
+					.col-md-4
+						.box-intro.box-style-1.object-non-visible.animated.object-visible.fadeInLeft.border-right-white(data-animation-effect='fadeInLeft', data-effect-delay='200')
+							.intro-container
+								img(src='/public/images/inst_sell/enterprise_direct_selling_icon8.png', tppabs='http://www.thfund.com.cn//public/images/inst_sell/enterprise_direct_selling_icon8.png', alt='')
+							h5.h5 天弘基金，企业理财首选
+							p.margin-clear.font12.font-color-a4aeb9.padding-bottom-10
+								| 稳健理财 值得信赖
+								br
+								| 追求“绝对收益”
+					.col-md-4
+						.box-intro.box-style-1.object-non-visible.animated.object-visible.fadeInLeft.box-shadow-clear(data-animation-effect='fadeInLeft', data-effect-delay='100')
+							.intro-container
+								img(src='/public/images/inst_sell/enterprise_direct_selling_icon9.png', tppabs='http://www.thfund.com.cn//public/images/inst_sell/enterprise_direct_selling_icon9.png', alt='')
+							h5.h5 追求稳健收益的资产管理
+							p.margin-clear.font12.font-color-a4aeb9.padding-bottom-10
+								| 专业投资团队掌舵
+								br
+								| 有效的风控体系与风险管理
+		// 基金产品 start
+		section.section.clearfix.object-non-visible.padding-clear.padding-top-20.margin-bottom-60(data-animation-effect='fadeInUpSmall', data-effect-delay='0')
+			.container.padding-clear
+				.row.margin-clear
+					#htab2.tab-pane.fade.active.in
+						.row.margin-clear
+							.col-md-12.padding-clear
+								h2.text-center.section-title-margin-40 基金产品
+								table#inst_table.table.table-striped.sort-table-box.table-same
+									thead
+										tr
+											th
+												span.sortable 基金代码
+											th
+												span.sortable 基金名称
+											th#fund_type.sortable_col
+												span.sortable.both 基金类型
+											th#latest_netvalue.sortable_col
+												span.sortable.both 最新净值
+											th#income_ratio.sortable_col
+												span.sortable.both 七日年化收益率
+											th#one_year_profit.sortable_col
+												span.sortable.both 近一年收益
+											th#setup_date.sortable_col
+												span.sortable.both 成立日期
+											th#buy_status.sortable_col
+												span.sortable.both 申购状态
+											th#redemption_status.sortable_col
+												span.sortable.both 赎回状态
+									tbody
+								nav#inst_pager.pull-right
+									ul.pagination
